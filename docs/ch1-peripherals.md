@@ -1,0 +1,8 @@
+---
+id: "ch1-peripherals"
+title: "Peripherals" 
+---
+
+:::tip Content coming soon! 
+This chapter is being actively developed and will be released upon completion
+:::  
