@@ -22,7 +22,7 @@ module.exports = {
           position: 'right',
         },
         {
-          href: 'https://github.com/gunnaraas/fundamentals-textbook',
+          href: 'https://github.com/gunnaraas/fundamentals-handbook',
           label: 'GitHub',
           position: 'right',
         },
@@ -93,7 +93,7 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/gunnaraas/fundamentals-handbook/edit/master/website/',
+            'https://github.com/gunnaraas/fundamentals-handbook/edit/master/docs/',
         },
         blog: {
           showReadingTime: true,
