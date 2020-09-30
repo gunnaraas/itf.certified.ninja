@@ -1,7 +1,7 @@
 module.exports = {
   title: 'IT Fundamentals Handbook',
   tagline: 'Jumpstart Your IT Career',
-  url: 'https://example.com',
+  url: 'https://itf.gunnaraas.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
@@ -22,7 +22,7 @@ module.exports = {
           position: 'right',
         },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/gunnaraas/fundamentals-textbook',
           label: 'GitHub',
           position: 'right',
         },
@@ -93,13 +93,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+            'https://github.com/gunnaraas/fundamentals-handbook/edit/master/website/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/gunnaraas/fundamentals-handbook',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
