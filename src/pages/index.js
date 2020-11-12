@@ -12,9 +12,9 @@ const features = [
     imageUrl: 'img/undraw_road_to_knowledge.svg',
     description: (
       <>
-        The IT Fundamentals Handbook is designed to be an easy to read 
-        resource as you prepare for the CompTIA ITF+ Certification Exam. 
-        Read the textbook and regularly attending classes, you will 
+        The IT Fundamentals Handbook is designed to be an easy to read
+        resource as you prepare for the CompTIA ITF+ Certification Exam.
+        Read the textbook and regularly attending classes, you will
         be well prepared for the certification exam!
       </>
     ),
@@ -24,9 +24,9 @@ const features = [
     imageUrl: 'img/undraw_Personal_notebook.svg',
     description: (
       <>
-        Interested in adding extra information you've learned to the handbook? 
-        This website is open source, hosted on GitHub and rendered with Docusaurus! 
-        Ask your instructor how you can help contribute.
+        Interested in adding extra information you've learned to the handbook?
+        This website is open source, hosted on GitHub and rendered with Docusaurus!
+        Press the GitHub button for instructions on how to edit this eBook.
       </>
     ),
   },
@@ -35,9 +35,9 @@ const features = [
     imageUrl: 'img/undraw_Options.svg',
     description: (
       <>
-        By offering a broad overview of many areas of information technology, 
-        this class helps give you insight into the many possible career paths 
-        for you in Information Technology! 
+        By offering a broad overview of many areas of information technology,
+        this class helps give you insight into the many possible career paths
+        for you in Information Technology!
       </>
     ),
   },
