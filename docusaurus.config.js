@@ -40,28 +40,8 @@ module.exports = {
             },
             {
               label: 'Computer Hardware',
-              to: 'docs/ch1-computingdevices/',
-            },
-            {
-              label: 'Computer Software',
-              to: 'docs/ch2-softwareapplications',
-            },
-            {
-              label: 'Advanced Computer Software',
-              to: 'docs/ch3-softwaredevelopment',
-            },
-            {
-              label: 'Networking',
-              to: 'docs/ch4-networking',
-            },
-            {
-              label: 'Computer Security',
-              to: 'docs/ch5-securitythreats',
-            },
-            {
-              label: 'IT Job Skills',
-              to: 'docs/ch6-troubleshooting',
-            },
+              to: 'docs/ch1-components/',
+            }
           ],
         },
         {
