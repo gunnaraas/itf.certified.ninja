@@ -3,7 +3,7 @@ module.exports = {
   tagline: 'Jumpstart Your IT Career',
   url: 'https://itf.gunnaraas.com',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'ignore',
   favicon: 'img/favicon.ico',
   organizationName: 'gunnaraas', // Usually your GitHub org/user name.
   projectName: 'fundamentals-handbook', // Usually your repo name.
