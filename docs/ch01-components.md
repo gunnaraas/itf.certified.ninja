@@ -1,5 +1,5 @@
 ---
-id: "ch1-components"
+id: "ch01-components"
 title: "Ch. 01 - Core Hardware Components"
 ---
 
