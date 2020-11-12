@@ -3,7 +3,7 @@ module.exports = {
   tagline: 'Jumpstart Your IT Career',
   url: 'https://itf.gunnaraas.com',
   baseUrl: '/',
-  onBrokenLinks: 'ignore',
+  onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
   organizationName: 'gunnaraas', // Usually your GitHub org/user name.
   projectName: 'fundamentals-handbook', // Usually your repo name.
@@ -40,7 +40,15 @@ module.exports = {
             },
             {
               label: 'Computer Hardware',
-              to: 'docs/ch1-components/',
+              to: 'docs/ch01-components/',
+            },
+            {
+              label: 'Computer Software',
+              to: 'docs/ch04-operatingsystems',
+            },
+            {
+              label: 'IT Infrastructure',
+              to: 'docs/ch07-databases'
             }
           ],
         },
