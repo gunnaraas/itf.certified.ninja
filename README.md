@@ -10,9 +10,9 @@ Except where otherwise noted, content on this site is licensed under a [Creative
 
 ### Local Development
 
-To develop this website locally on your machine, make sure you have node.js, yarn, and a text editor of your choice (Atom, Visual Code Studio) installed. I recommend Windows users use [Chocolatey](https://chocolatey.org) to install node.js and yarn.
+To develop this website locally on your machine, make sure you have [node.js](https://nodejs.org/en/), [yarn](https://yarnpkg.com/), and a text editor of your choice ([Atom](https://atom.io/), [Visual Code Studio](https://code.visualstudio.com/)) installed. I recommend Windows users use [Chocolatey](https://chocolatey.org) to install node.js and yarn.
 
-Open a terminal (e.g. PowerShell) in the location you'd like to save the development files (In Windows Explorer: Shift + Right-Click).
+Open a terminal (e.g. PowerShell, [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab)) in the location you'd like to save the development files (In Windows Explorer: Shift + Right-Click).
 
 Clone and enter the repository using:
 ```
@@ -28,7 +28,7 @@ Most changes are reflected live without having to restart the server.
 
 ### Outside Contributions
 
-Students and other users are invited to make changes and edits to the website as needed. You can do this by setting up a Local Development environment on your computer, or editing the files in the `/docs/` directory inside your browser. All pages are written in Markdown, and a Github account is required to submit contributions. Please create a pull request to submit any changes for approval. To submit content in plaintext, email to: gunnar (at) gunnaraas.com
+Students and other users are invited to make changes and edits to the website as needed. You can do this by setting up a Local Development environment on your computer, or editing the files in the `/docs/` directory inside your browser. All pages are written in Markdown ([Markdown Guide](https://guides.github.com/features/mastering-markdown/)), and a Github account is required to submit contributions. Please create a pull request to submit any changes for approval. To submit edits or new content in plaintext, email to: gunnar (at) gunnaraas.com
 
 ### Netlify Build Settings
 
