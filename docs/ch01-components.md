@@ -2,9 +2,11 @@
 id: "ch01-components"
 title: "Ch. 01 - Core Hardware Components"
 ---
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
 
 # Introducing Internal Components
-Computer components are mostly Modular meaning they can be removed and replaced by another piece of hardware that does the same thing, provided that it’s compatible and it fits. For example, if the hard drive in your laptop fails, it can be removed and replaced by another hard drive.
+Computer components are mostly modular, meaning they can be removed and replaced by another piece of hardware that does the same thing, provided that it’s compatible and fits in the case. For example, if the hard drive in your laptop fails, it can be removed and replaced by another hard drive.
 
 Field Replaceable Units are used to describe modular components that can be replaced.
 
@@ -17,86 +19,141 @@ Motherboards, processors and memory are the holy of the computer.
 
 ## Motherboards
 
-Motherboard: Connects all the other components of a computer together. It acts like the nervous system of the computer. It is also known as a ‘system board or mainboard’.
-Below is a list of some of the Features and Components that are associated with a mother board:
--	Form Factors- The physical size and shape of a motherboard.
--	Chipsets- A collection of integrated circuits that perform functions for the processor. They dictate how a motherboard will communicate with the installed peripherals.
--	Processor sockets- A socket in which a processor or CPU is placed into. Although CPU come varied, their sockets either come in two different types: Land Grid Array (LGA) or Pin Grid Array (PGA).
--	LGA – Meaning the socket has a flat surface, which allow a CPU with a flat or smooth surface to make contact with the Processor Socket.
--	PGA – Meaning the socket has, tiny holes on its surface, which allow a CPU with tiny needle pins to make contact with the Processor Socket.
--	Memory slots- Slots that are for modules that hold Random Access Memory (RAM) chips. They could be either DIMM (Desktop RAM size) or SODIMM (Laptop RAM size).
--	Expansion slots- Slots that are used to install various devices in the computer to expand its capabilities. These slots come in different versions; Peripheral Component Interconnect (PCI), Accelerated Graphics Port (AGP) and/or Peripheral Component Interconnect Express (PCIe).
--	Disk controllers- These are locations in which Hard Drive connectors connect to the motherboard. There are 3 main types of controller’s slots: Integrated Drive Electronics (IDE older slot), Parallel ATA (PATA) and/or Serial ATA (SATA).
-o	Power controllers- Are special connectors’ which allows the motherboard to be connected to the power supply. Current Motherboards Come with the 24-pin connector, while older motherboards use 20-pin model.
--	BIOS/Firmware- Software that is encoded on a read only memory. Example of this would be the BIOS: Basic Input/ Output System which would be burned into a flash memory chip located on the motherboard.
--	CMOS and CMOS battery- Complementary Metal-Oxide Semiconductor CMOS is a special memory chip which BIOS settings are stored ie: Date, Time, Hard Drive Configuration, RAM and CPU settings.
+The **motherboard** connects all the other components of a computer together. It acts like the nervous system of the computer. It is also known as a ‘**system board** or **mainboard**’.
 
--	CMOS battery allows the CMOS chip to remain powered to allows changes made to the settings have been stored. If the battery loses power the chip will reset all of its configurations and not save any other changes made.
--	Back-panel connectors- All the different types of connectors that are located at the back of the computer.
--	Front-Panel connectors- Typically the Power and Reset Button are located, Drive Activity Lights, in addition to Audio Ports and other Connectors.
+Below is a list of some of the Features and Components that are associated with a motherboard:
+-	**Form Factor** - The physical size and shape of a motherboard.
+-	**Chipsets**- A collection of integrated circuits that perform functions for the processor. A motherboard's chipset dictate how a motherboard will communicate with the installed components and peripherals.
+-	**Processor sockets**- A socket in which a processor or CPU is placed into. Although CPU come varied, their sockets either come in two different types: **Land Grid Array (LGA)** or **Pin Grid Array (PGA)**.
+    -	**LGA** – Meaning the socket has a flat surface, which allow a CPU with a flat or smooth surface to make contact with the Processor Socket.
+    -	**PGA** – Meaning the socket has, tiny holes on its surface, which allow a CPU with tiny needle pins to make contact with the Processor Socket.
+    ![Close-up image of a LGA (left) and PGA (right) processor](/assets/images/ch01-lga_vs_pga.jpg) 
+-	**Memory slots**- Slots that are for modules that hold Random Access Memory (RAM) chips. They could be either DIMM (Desktop RAM size) or SODIMM (Laptop RAM size).
+-	**Expansion slots**- Slots that are used to install various devices in the computer to expand its capabilities. These slots come in different versions; **Peripheral Component Interconnect (PCI)**, **Accelerated Graphics Port (AGP)** and/or **Peripheral Component Interconnect Express (PCIe)**.
+
+*Click each tab to learn about the three different expansion slot.* 
+
+  <Tabs
+    defaultValue="pci"
+    values={[
+      {label: 'PCI', value: 'pci'},
+      {label: 'AGP', value: 'agp'},
+      {label: 'PCIe', value: 'pcie'},
+    ]}>
+    <TabItem value="pci"> <b> Peripheral Component Interconnect (PCI) </b> is the oldest expansion slot type. It is still found on many motherboards for compatibility with legacy devices. </TabItem>
+    <TabItem value="agp"> <b> Accelerated Graphics Port (AGP) </b> is an expansion slot used specifically for video graphics cards on motherboards manufactured between 1998 and 2005. It is very unlikely to find an AGP port on a modern motherboard. </TabItem>
+    <TabItem value="pcie"> <b> PCI Express (PCIe) </b> is the modern standard for motherboard expansion slots. Unlike earlier expansion slots, this one comes in multiple sizes, noted with an x (pronounced "by") then a number (example: PCIe x16). Many modern motherboards will have multiple PCIe slots. Valid sizes include PCIe x1, x4, x8, and x16. </TabItem>
+  </Tabs>
+
+-	**Disk controllers** are locations in which Hard Drive connectors connect to the motherboard. There are 3 main types of controller’s slots: **Integrated Drive Electronics (IDE older slot)**, **Parallel ATA (PATA)** and **Serial ATA (SATA)**.
+-	**Power controllers** are special connectors which allows the motherboard to be connected to the power supply. Current Motherboards Come with the 24-pin connector, while older motherboards use 20-pin model.
+-	**BIOS (Basic Input/Output System)** is software that is encoded on a read only memory chip that is built into your motherboard. This is responsible for starting the different connected components, checking that they are installed correctly, and booting into your operating system. 
+-	**CMOS (Complementary Metal-Oxide Semiconductor)** CMOS is a special memory chip which BIOS settings are stored ie: Date, Time, Hard Drive Configuration, RAM and CPU settings.
+    - The CMOS is a RAM chip, and forgets your settings if it loses power. To retain information, it's always powered by the **CMOS Battery**, a small watch battery found on the motherboard
+
+:::note
+If a computer requires you to enter the BIOS settings every time it turns on, or the clock defaults to midnight on January 1st, the **CMOS battery** is likely old and needs to be replaced.
+:::
+
+-	**Back-panel connectors** are connectors found on your motherboard that are accessable from the back of the computer case. 
+-	Your computer likely has a power and restart button, USB ports, and a headphone jack on the front of the case. These connect to a connector on the motherboard known as the **front-panel connectors** 
 
 ## Processors
 
--	Central Processing Unit (CPU): Is the brain of the computer, its main job is to control and direct all the activities of the computer. The CPU is the only computer component know to generate the most heat. 2 Of the largest CPU manufactures are Intel and Advance Micro Devices (AMD).
+-	The **Central Processing Unit (CPU)** is the brain of the computer. It's main job is to control and direct all the processes and activities of the computer. The CPU is the computer component known to generate the most heat. The two most popular CPU manufacturers are **Intel** and **Advanced Micro Devices (AMD)**.
 
--	CPU: are built in 3 architecture types; 32-bit, 64 bit and ARM.
--	32-bit cannot process as much data as a 64-bit architecture.
--	Advance RISC Machines (ARM) refers to processors that uses an architecture known as Reduced Instruction Set Computing (RISC) which means these chips take a longer method to compute calculations than a normal chip. However, the benefits of being slower than a regular PC or Laptop chip is that it can be built much smaller and also produce less heat.
+### CPU Architecture
+- The CPU has a preprogramed group of tasks it can run, known as it's "**instruction set**".
+    - Desktop and laptop computers almost always use the **x86 instruction set**, while mobile devices like smartphones and tablets use a simpler instruction set known as **ARM (Advanced RISC Machine)** 
+    - The CPU also has a **bit width** that can refers to how much information an instruction can contain. **32-bit** and **64-bit** are the most common bit widths. Older computers and gaming systems used smaller ones, you might see the term **8-bit** used to describe retro video games (or the processors they ran on!).  
+    - A CPU's **instruction set** and **bit width** is combined together to be called the **CPU Architecture** 
 
--	CPU speed: Is measured in electrical cycles per second called HERTZ. Modern CPU process electrical cycles in billions of Cycles per second (Gigahertz per second). That is why when you look up CPU speeds they are always written in GHz.
+<Tabs
+  defaultValue="x86-32"
+  values={[
+    {label: 'x86 (32-bit)', value: 'x86-32'},
+    {label: 'x86 (64-bit)', value: 'x86-64'},
+    {label: 'ARM', value: 'arm'},
+  ]}>
+  <TabItem value="x86-32"> The 32-bit processor found in desktop and laptop computers. These are only capable of running 32-bit operating systems and applications. They are generally slower, and usually do not support more than 4GB of memory. There are no mainstream 32-bit x86  processors in production today, and they are typically considered "legacy".</TabItem>
+  <TabItem value="x86-64"> The 64-bit processor found in desktop and laptop computers. A 64-bit processor is required to run 64-bit operating systems and software, and is backwards compatible with older 32-bit software. Most processors today are 64-bit. </TabItem>
+  <TabItem value="arm"> The processor found in smartphones and tablets. These comes in 32-bit and 64-bit versions. Because they understand a smaller set of instructions, they consume less power and generate less heat, making them ideal for battery powered, fanless devices. Some laptop and desktop computers, like those with Apple's new M1 processor, are starting to also use the ARM architecture. </TabItem>
+</Tabs>
 
--	CPU: have built in memory called cache, which typically come with 3 Levels in one chip. L1, L2 and L3.
-  -	L1 is most commonly known as the fastest, but the smallest capacity.
-  -	L2 is slower in speed that L1 but larger in capacity.
-  -	L3 is the slowest in speed but, much larger in capacity than L1 and L2 combined.
+### CPU Speed
+**CPU speed** is measured in electrical cycles per second called Hertz (Hz). Modern CPU process electrical cycles in billions of Cycles per second (Gigahertz). That is why when you look up CPU speeds they are always written in GHz.
+
+### CPU Cache
+CPUs have built in memory called cache, which typically come with 3 Levels in one chip. L1, L2 and L3.
+-	L1 is most commonly known as the fastest, but the smallest capacity.
+-	L2 is slower in speed that L1 but larger in capacity.
+-	L3 is the slowest in speed but, much larger in capacity than L1 and L2 combined.
 
 ## Memory
+
+### Types of Memory 
 Memory is a computer hardware device that is used to store data.
-Data/Memory can be stored on this hardware device in one of two ways: statically or dynamically.
--	Static Memory means the data stored does not need power to keep the data saved within it, known as nonvolatile memory.
--	Dynamic Memory meaning the data stored requires a constant flow of power (electricity) to keep the data, known as volatile memory.
+Data can be stored on memory in one of two ways: statically or dynamically.
+-	**Static Memory** means the data stored does not need power to keep the data saved within it, known as *non-volatile memory*.
+-	**Dynamic Memory** meaning the data stored requires a constant flow of power (electricity) to keep the data, known as *volatile memory*.
 
-Memory is designed, to be accessed in one of 2 ways: Read Only Memory (ROM) and Random Accessed Memory (RAM).
--	ROM is data stored permanently on the hardware or chip, in which you cannot make changes to its content at all.
--	RAM is which can be written and rewritten on the hardware or chip. There are two common forms of RAM, Static RAM (SRAM) and Dynamic RAM (DRAM).
--	SRAM is does not need power to keep its data. Writing or storing files on SRAM is called Flashing. This is why SRAM is also referred to as Flash RAM.
--	DRAM does require power to keep its data.
--	Memory Bus: is the pathway which data is delivered to and from memory. Memory on modern PC is synchronized with the system bus, which is controlled by a system timer (known as Northbridge) on the mother board. The system timer controls how fast the data enters the processor (CPU).
--	Memory that is designed to operate at the same speed as the Memory Bus or Front side-bus it is called single data rate (SDR) Synchronous Dynamic Random-Access Memory (SDRAM).
--	Successor to SDRSDRAM is called Double Data Rate (DDR) SDRAM also called DDR1. There are other successors to DDR1 such as DDR2, DDR3, DDR4 etc. With each successor the speed doubles from the previous version.
+Memory is designed to be accessed in one of 2 ways: **Read Only Memory (ROM)** and **Random Accessed Memory (RAM)**.
+-	**ROM** is data stored permanently on the hardware or chip, in which you cannot make changes to its content at all.
+-	**RAM** is which can be written and rewritten on the hardware or chip. There are two common forms of *RAM, Static RAM* *(SRAM)* and *Dynamic RAM (DRAM)*.
+    -	**Static RAM** is does not need power to keep its data. This is the type of memory chip that is used to save data to SSDs and Flash Drives. 
+    -	**Dynamic RAM** does require power to keep its data. This is the type of memory chip used on a stick of computer RAM. 
 
-Memory today is arranged on a small circuit board. i.e. Dual Inline Memory Module (DIMM). DIMM is arranged is such a way that the pins that connect to the RAM socket on the motherboard are placed on both sides of the RAM chip.
--	Laptops use Small Outline Dual Inline Memory (SODIMM) which is smaller compared to the DIMM model.
+### Memory Bus 
+The **memory bus** is the pathway on the motherboard which data is delivered between the memory and the CPU. The speed memory operates on modern PC is synchronized with the system bus, which is controlled by a system timer (known as Northbridge) on the motherboard. The system timer controls how fast the data enters the processor (CPU).
+-	Memory that is designed to operate at the same speed as the Memory Bus or Front side-bus is called **single data rate (SDR)** Synchronous Dynamic Random-Access Memory **(SDRAM)**.
+-	Successor to SDR SDRAM is called Double Data Rate (**DDR**) **SDRAM** also called DDR1. There are other successors to DDR1 such as DDR2, DDR3, DDR4 etc. While they all work similarly, the major improvement between each version is the speed, doubling the speed data can be read or written by double of it's predecessor. 
+
+### Memory Form Factors
+- Desktops use a type of memory known as **Dual Inline Memory Module (DIMM)**. DIMM is arranged is such a way that the pins that connect to the RAM socket on the motherboard are placed on both sides of the RAM chip.
+-	Laptops use **Small Outline Dual Inline Memory (SODIMM)** which is smaller compared to the DIMM model.
 
 # Exploring Storage and Expansion Devices
 Storage devices prolong the long-term storage, while Expansion Devices expand your systems’ functionality by giving it additional features.  
 
-## Hard Drives
-Hard drives are used for permanent storage and quick access.
--	Hard drives come in 2 sizes 3.5 and 2.5 inches, they can come either as a Hard Disk Drive (HDD) or Solid-State Drive (SDD). The storage capacity of a hard drive is measure in bytes i.e. A drive would have 100GB meaning it would have 1 Trillion bytes stored within it.
--	HDD drives have moving parts within them and have their speed measured in Revolutions Per Minute (RPM). This is due to the fact they have moving parts within them. Due to the improvement towards the technology of HDD this has resulted them in becoming more affordable.
--	SSD drives have no moving parts within which makes them faster (Read and Write times), consume less power and more resilient than their HDD counterpart. However, they are more expensive than their HDD and have a finite (limited) amount of write operations.
--	Connecting a Hard drive to the motherboard of either a Desktop or Laptop depends on the standard that the drive uses. There are 2 common hard drive standards that are used in the market today. Parallel ATA (PATA) also know as Integrated Drive Electronics (IDE) and Serial ATA (SATA).  
--	PATA has been around longer.
--	SATA is the newer and faster technology.
+## Storage Drives
+Hard drives and solid-state drives are used for permanent storage and quick access.
+- The capacity of a storage device, or how much data it can hold, is usually measured in bytes. For example, a 1000GB hard drive can store a maximum of 1 trillion bytes.
+-	Hard drives come in **3.5" (for desktops)** and **2.5" sizes (for laptops)**. Solid state drives usually only come in the 2.5" size. 
+
+### Types of Storage Devices 
+-	**Hard Disk Drives (HDDs)** rely on a spinning magnetic disk to read and write data. The speed this disk spins (and therefore, the speed we read/write data) is measured in **Revolutions Per Minute (RPM)**. HDDs are an inexpensive way to store large amounts of data.
+-	**Solid-State Drives (SSDs)** are a faster alternative to HDDs that use flash memory chips to store data. Since they do not rely on moving parts, they are faster, consume less power, and are more resiliant than their HDD counterpart. However, they are more expensive than HDDs and have a finite (limited) amount of times data can be written to them.
+
+|     | Pros | Cons | 
+| --- | ---- | ---- |
+| HDD | Low cost option for storing large amounts of data | Slow, loud, hot, sensitive to movement| 
+| SSD | Very fast, silent, generate little heat | Expensive, especially for large amounts of data. Limited write operations. | 
+### Storage Device Connectors
+Connecting a Hard drive to the motherboard of either a Desktop or Laptop depends on the standard that the drive uses. There are 2 common hard drive standards that are used in the market today. **Parallel ATA (PATA)** also know as **Integrated Drive Electronics (IDE)** and **Serial ATA (SATA)**.  
+-	**PATA/IDE** is a legacy technology that uses a large "ribbon style" connector. It is very slow by modern standards. 
+-	**SATA** is the modern standard for connecting storage devices. It uses a small, L shaped "SATA connector", and supports speeds of up to 6 Gbps.
 
 ## Optical Drives
-An optical drive is a computer hardware that, uses laser light as part of the process of reading or writing data to or from optical disks, i.e. Compact Disks (CD), Digital Video Disk (DVD), Blue ray Disk (BD), etc.
--	Each type of Optical Disk comes with its own unique features such as, being re-writable for writability, Dual layer for writable layers and Double Side for the amount of sides in which data can be written or read from.
+An optical drive is a computer hardware that, uses laser light as part of the process of reading or writing data to or from optical disks. Popular examples of optical disks include **Compact Disks (CD)**, **Digital Video Disk (DVD)**, and **Blu-Ray Disk (BD)**.
+-	Optical discs have special features that both the disk and drive must support. Examples include: 
+    - **-R** (Writable): Allowing users to record their own data to the disc a single time. Goes through a "finishing" process after "burning" the disc that converts it to a -ROM (read-only).
+    - **(CD/DVD)-RW (BD)-RE** (Re-writable/Re-recordable): Allow users to record and edit information written to a disc multiple times. 
+    - **-DL** (Dual Layer): The disc has multiple payers of storage space, doubling the storage capacity of the disc.  
+    - **-DS** (Double Sided): The disc contains data on both sides of the disk. 
+    - These can be combined together to have the benefits of each other. For example, a BD-DLDSRE is a dual layer, double sided, re-recordable Blu-Ray disc capable of holding approximately 100 GB of data. 
 
 ## Video Cards
-A video card also known as Graphics adapter is an expansion card that is put into your		 computer to display output on your monitor.
--	Video cards come equipped with their own unique graphics adapter i.e. VGA, DVI or HDMI. In addition, video cards have additional features such as their own processor called Graphics Procession Unit (GPU) which is dedicated for graphics computation, and also their own RAM embedded on the card.
+A video card (also known as graphics adapter) is an expansion card that contains a special processor (known as the **GPU**) that helps quickly process high quality graphics in video games, photo/video editing, and more. It also provides additional monitor outputs for users that require multiple displays.
 
 ## Sound Cards
-Sounds cards are converting computer signals into sound. They typically come with 3.5 mm jacks which allows sound devices to connect to then i.e. Headphones, speakers etc.
--	Old models of sound cars used to also come with a DA15 game port, to allow joysticks (gaming controllers) to be connected to the card.
+Sounds cards convert digital information into sound waves. They typically come with 3.5 mm jacks which allows sound devices, like headphones, speakers, and microphones, to be used with the computer. Sound cards are often built into the motherboard today.
+-	Old models of sound cards used to also come with a DA15 "game port", to allow gamepads and joysticks to be connected to the machine. This is a legacy connector, as modern controllers usually use USB or Bluetooth. 
 
 ## Network Cards
-Network Cards allow computers to communicate and share data with other computers, via either a wired or wireless connection.
+Network Cards allow computers to communicate and share data with other computers, via either a wired (Ethernet) or wireless (wi-Fi) connection. 
 
 ## Modems
-Modems (Modulator/ Demodulator) is a device that converts digital signals to analog signals that can be transmitted over phone lines and back again. These devices allow things such as Faxing through the computer to be possible.
+Modems (Modulator/ Demodulator) is a device that converts digital signals to analog signals that can be transmitted over phone lines and back again. These devices were used to access the internet through a dial-up connection (very slow!) and are legacy today. Some modems also allow features like faxing.
 
 # Exploring Power and Cooling
 Computers require power to function, however they also generate a lot of heat in the process, which results in the need for a cooling.
@@ -106,12 +163,14 @@ The device that power a computer is called a Power Supply Unit (PSU). PSU conver
 
 ## Cooling Systems
 Providing power to computer components generates a lot of heat, which in turn shortens the life of the computer. To prevent premature decay of computer components two cooling systems are put in place: Case (Chassis) and /or CPU cooling.
--	Case (Chassis) cooling most commonly uses fans to cool components of a computer. The placement of the fans is what is what decides how the PC cools itself, i.e. Front Intake Fan - Takes in fresh cool air into the chassis.
--	Rear Exhaust Fan - Takes out all the hot air generated in the chassis.
--	Power Supply Exhaust Fan – Takes out heat generated by the PSU.  
--	CPU cooling could use Air or Liquid cooling systems to keep the CPU from overheating. 	
--	CPU Air cooling blows air down the heatsink (A device used to transfer heat generated by the CPU out) to join the current air being exhausted by the Exhaust fan.
--	CPU Liquid cooling uses special water block to conduct heat away from the CPU and circulate it through the block to a radiator, where it is cooled. Although liquid cooling is quieter than air cooling, it is more expensive and are perceived to cause more damage to a computer if the device breaks within the chassis.
+-	**Case (Chassis) cooling** most commonly uses fans to cool components of a computer. A number of specific fans are used to cool the case. 
+    - Front Intake Fan - Takes in fresh cool air into the chassis.
+    -	Rear Exhaust Fan - Takes out all the hot air generated in the chassis.
+    -	Power Supply Exhaust Fan – Takes out heat generated by the PSU.  
+
+-	**CPU cooling** since the CPU generates the most heat of any component, it requires it's own special cooling solution.  	
+    -	Air cooling is most common, and involves transfering heat away from the CPU using a device called the **heatsink**, which distributes the heat across thin metal blades or fins. A fan is usually attached to the heatsink to keep it cool. 
+    -	Liquid cooling uses a device known as a water block to transfer heat away from the CPU into a liquid (usually water) and transfer it to a radiator, where it is cooled. Although liquid cooling is quieter than air cooling, it is more expensive and are perceived to cause more damage to a computer if the device breaks within the chassis.
 
 # Summary
 In this chapter we looked at many things:
