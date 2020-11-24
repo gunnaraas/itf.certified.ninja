@@ -28,7 +28,7 @@ Most changes are reflected live without having to restart the server.
 
 ### Outside Contributions
 
-Students and other users are invited to make changes and edits to the website as needed. You can do this by setting up a Local Development environment on your computer, or editing the files in the `/docs/` directory inside your browser. All pages are written in Markdown ([Markdown Guide](https://guides.github.com/features/mastering-markdown/)), and a Github account is required to submit contributions. Please create a pull request to submit any changes for approval. To submit edits or new content in plaintext, email to: gunnar (at) gunnaraas.com
+Students and other users are invited to make changes and edits to the website as needed. You can do this by setting up a Local Development environment on your computer, or editing the files in the `/docs/` directory inside your browser. All pages are written in Markdown ([Markdown Guide](https://www.markdownguide.org/tools/docusaurus/)), and a Github account is required to submit contributions. Please create a pull request to submit any changes for approval. To submit edits or new content in plaintext, email to: gunnar (at) gunnaraas.com
 
 ### Netlify Build Settings
 
