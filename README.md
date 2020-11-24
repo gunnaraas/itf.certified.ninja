@@ -1,6 +1,6 @@
-# IT Fundamentals Handbook website
+# IT Fundamentals Notebook website
 
-This repository hosts an online textbook written in house for [Gunnar Aas](https://gunnaraas.com)'s [MNCFS](https://mncfs.org/) CompTIA ITF+ classes.
+This repository hosts instructor and student notes for [MNCFS](https://mncfs.org/)'s CompTIA ITF+ classes.
 
 This website is built using [Docusaurus 2](https://v2.docusaurus.io/) and is compiled and hosted by [Netlify](https://netlify.com).
 
