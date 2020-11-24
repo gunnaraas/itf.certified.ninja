@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'IT Fundamentals Handbook',
+  title: 'CompTIA IT Fundamentals+ Notebook',
   tagline: 'Jumpstart Your IT Career',
   url: 'https://itf.gunnaraas.com',
   baseUrl: '/',
@@ -9,9 +9,9 @@ module.exports = {
   projectName: 'fundamentals-handbook', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'IT Fundamentals Handbook',
+      title: 'CompTIA IT Fundamentals+ Notebook',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'MNCFS Logo',
         src: 'img/mncfs-logo.png',
       },
       items: [

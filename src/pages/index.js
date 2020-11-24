@@ -12,8 +12,8 @@ const features = [
     imageUrl: 'img/undraw_road_to_knowledge.svg',
     description: (
       <>
-        The IT Fundamentals Handbook is designed to be an easy to read
-        resource as you prepare for the CompTIA ITF+ Certification Exam.
+        The IT Fundamentals Notebook is designed to be an easy to use
+        supplementary resource as you prepare for the CompTIA ITF+ Certification Exam.
         Read the textbook and regularly attending classes, you will
         be well prepared for the certification exam!
       </>
@@ -24,7 +24,7 @@ const features = [
     imageUrl: 'img/undraw_Personal_notebook.svg',
     description: (
       <>
-        Interested in adding extra information you've learned to the handbook?
+        Interested in adding extra information to the notebook?
         This website is open source, hosted on GitHub and rendered with Docusaurus!
         Press the GitHub button for instructions on how to edit this eBook.
       </>
