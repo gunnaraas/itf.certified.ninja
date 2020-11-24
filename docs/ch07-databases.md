@@ -5,14 +5,15 @@ title: "Ch. 07 - Database Fundamentals"
 # Understanding Databases
 Databases store data, the differences between different databases depends on the different situations that they are in, how these databases store data and how user’s extract data from the database.
 
-## Exploring Databases Concepts and Structures (Topic A)
--	Table is similar to a spreadsheet, but is not called a spreadsheet it is called a table.
+## Exploring Databases Concepts and Structures 
+-	A table is similar to a spreadsheet, but is not called a spreadsheet, it is called a table.
 -	Flat file is also known as a spreadsheet, because it is 2D, it only has rows and columns.
--	When to Use Databases
+
+### When to Use Databases
 -	Multiple Concurrent Users you want multiple users to access the data in the database.
 -	Scalability is performance effects that increase of users or data points has on a set of data. Databases are extremely scalable, allowing access to hundreds or tens of thousands of users at a time.
 -	Speed will depend on the type of hardware that is installed on the machine, in particular RAM and Hard Drive storage. For example, if you had an SSD installed on your database and had adequate RAM then your machine would function much faster and have better performance.
--	Variety of Data can be stored within a database making it readily available and quick when searching for it.
+-	A wide variety of data can be stored within a database, making it readily available and quick when searching for it.
 -	Number of Records meaning that a database has no limit to the amount of data that can be stored on Its table (spreadsheet). The only limitation that could limit this would be the size of the storage capacity.
 -	Data Persistence is the ability for the database to keep the data, even when power is lost or when you are making changes in real time. The data “log” system will allow, data to be retrieved even when the data gets corrupted.
 -	Security is improved on a database, on a spreadsheet, if a user were to obtain the entire spreadsheet, they would be able to see all the data within that spread sheet. In a database, users maybe able to access specific columns or rows of data but not see anything else.
@@ -44,7 +45,7 @@ A cool feature of document databases is the that each document is considered to 
 -	Key/Value Databases stores values as Blobs, meaning that they don’t confirm to a schema. A key/value database is represented as a collection of key/value pairs.
 -	Dictionary a collection of objects or records.
 
-## Working with Databases (Topic B)
+## Working with Databases 
 Databases exist to store large quantities of data and to make it relatively easy for administrators or users to access.
 -	Manual Access is directly going into the tables of a database to view or change data.
 -	Direct Access is similar to Manual Access except, it can also be accessed through a network connection. This feat is done with an Application Programming Interface (API), open database connection (ODBC), or Java database connection (JDBC) link. The computer would establish a link between itself and the table with one of these methods and then has direct access to the databases.
@@ -58,11 +59,11 @@ Databases exist to store large quantities of data and to make it relatively easy
 -	Creating a Database requires using the SQL command CREATE. This is used to create both a TABLE or DATABASE.
 -	Importing and Inputting Data can either be done manually or imported into the database. This can easily be done if there is a DBMS in place because of its ease to navigate around.
 -	Dropping Databases and Tables comes in handy if you want to delete tables or databases. Typically, the SQL command that is used to delete or drop tables or databases is DROP.
--	Manipulating Data in a relational database can be done by using one of the four commands: UPDATE, INSERT, DELETE and SELECT.
--	INSERT is used to insert records into an existing database.
--	SELECT is used to identify and display the data that the user needs.
--	UPDATE is used to update existing data in the database.
--	DELETE is used to delete the records or the data in the table.
+-	Manipulating Data in a relational database can be done by using one of the four commands: **UPDATE**, **INSERT**, **DELETE** and **SELECT**.
+-	**INSERT** is used to insert records into an existing database.
+-	**SELECT** is used to identify and display the data that the user needs.
+-	**UPDATE** is used to update existing data in the database.
+-	**DELETE** is used to delete the records or the data in the table.
 -	Extracting Data from a database isn’t complicated when there is very little data to search from. It only gets really complicated when the database is massive. There are two methods of navigating a database: queries and reports. Queries for the less complicated Database and Reports for the more complicated database.
 
 The benefits of generating reports is because of how clean the data is presented when requested. Rather than obtaining all of the data raw, reports would generate the right amount of data requested, while omitting the unnecessary data.
