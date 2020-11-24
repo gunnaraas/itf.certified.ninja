@@ -10,7 +10,7 @@ When it comes to computers there 3 major Classifications of Software: Operating 
 
 ## A Brief History of Operating Systems
 **(NOT TESTED ON THIS!!)**
-Understanding a brief history of Operating systems will allow users to appreciate their	development and knowing the foundations of modern OS’s came from either UNIX or Xerox 	Star.
+Understanding a brief history of Operating systems will allow users to appreciate their	development and knowing the foundations of modern OS’s came from either UNIX or Xerox Star.
 -	Pre-OS period required everything that an OS provides us with today to have been manually entered. The first computer that was developed was called the Electronic Numerical Integrator And Computer (ENIAC). It was developed by U.S government, in partnership with the University of Pennsylvania in 1945.  
 -	The Early Days in 1954 IBM developed the first computer programming language: Fortran, which allowed programmers to create simple commands that told the computer to execute several commands.
 -	Standardization came to fruition in 1969 when a group of engineers from Bell Labs came out with UNIX, which was easier to understand and used a new programming language called C. Before this, an operating system was usually written for a specific computer. Since Bell Labs could not make money on UNIX, due to monopoly laws, they decided to distribute it for free which resulted in its popularity. Users were also free to make modifications to the OS, which made UNIX open-source. IBM developed its first PC in 1981, which came bundled with Microsoft Disk Operating System (MS-DOS).
@@ -19,9 +19,10 @@ Understanding a brief history of Operating systems will allow users to appreciat
 ## Operating System Vocabulary 
 Below are some terms that should be known for Computer Literacy:
 -	**Kernel** is the central part of the OS which controls the all the actions of the OS i.e. controlling which processes get to the CPU and memory, and translating between hardware and software components in the computer.
--	**Version** is a particular revision of the software, described by a number, which indicates the new product in relation to the old one.  
--	**Source code** defines how a piece of software works.
 -	**Shell** is a program that runs on top of the OS which allows the user to issue commands through menus or an interface, making it easier to use. i.e. GUI.
+![Diagram of the relationship between the kernel, shell, user, and hardware](/assets/images/ch04-kernel_shell.png "Kernel and Shell diagram")
+-	**Version** is a particular revision of the software, described by a number, which indicates the new product in relation to the old one.  
+-	**Source code** defines how a piece of software works. 
 -	**Graphic User Interface** allows a user to use a mouse, touchpad, or another mechanism (keyboard) to interact with the computer to issue commands, by clicking on icons, graphical images and other methods other than text.
 -	**Cooperative Multitasking** is a multitasking method that depends on the application itself to be responsible for using the processor and then freeing it for access by other applications.
 -	**Preemptive Multitasking** is a method in which the OS allots each application a certain amount of processor time and then forcibly takes back control and gives another application or task access to the processor. For example, if an application crashes the OS takes control of the process away from the locked application and passes it on to the next application.
