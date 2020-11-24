@@ -124,5 +124,16 @@ Before an OS begins managing folders and creating file structures, the hard driv
 -	**Delete** removes the file from the directory (folder) to the Recycle Bin.
 -	**Rename** changes the metadata for the file by giving it a new name.
 
+#### Common File Systems 
+| File System | Usual OS | Notes | 
+|-------------|----------|-------|
+| File Allocation Table (FAT) | Windows | Obsolete, no security, no journaling, small max partition size | 
+| FAT32 | Windows | No security or journaling | 
+| New Technology File System (NTFS) | Windows | Default for modern Windows | 
+| Hierarchical File System (HFS) | macOS | Also used on read-only media like CD-ROMS | 
+| third extended file system (ext3) | Linux | Standard Linux file system; maximum of 32,000 subdirectories in a directory | 
+| fourth extended file system (ext4) | Linux | Modern Linux file system, supports larger volumes; maximum of 64,000 subdirectories in a directory | 
+| Extended File System (XFS) | Linux | High-performance file system, supports large partitions | 
+
 # Summary
 In this chapter we mentioned the various OSs that are in the market. We also covered a brief history of the OS, its necessity and relation to the Hardware that supports. The structure of the OS files and systematic of how OSs store data in the hard drive was also mentioned in this chapter. We finally concluded the chapter with managed options performed by the OS and the user configuring the OS. It is clear that the OS is very important to our interaction with computers today, making tasks that would take considerable amounts of time to perform, executing them in seconds.
