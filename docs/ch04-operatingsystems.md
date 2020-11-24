@@ -78,11 +78,11 @@ Mobile Operating Systems have their own OS which is not the same as the ones men
 -	**Windows Mobile** started in early 2000 as the Pocket PC, could have easily dominated the mobile device market. However due to various name changes and poor targeted marketing schemes, it could no longer compete with Android and iOS devices. Windows Mobile was retired in 2015.
 
 ### Virtual OS 
--	Virtual Operating Systems allow multiple OSs to run on one physical machine at the same time, while still being bound by the physical characteristics of the machine on which they reside.
--	The Purpose of Virtual Machines allows users to move away from dual booting their computers and taking away the need to physically purchase multiple hardware devices, which would in turn reduce the cost.
--	The Hypervisor is a software that allows multiple operating systems to share the same host and also manages the physical resource allocation of those virtual OSs. There are 2 types of Hypervisor:
-    -	Type 1: Aka Bare-metal hypervisor, is basically the operating system for the physical machine, it does not have a host OS involved and the system is dedicated to support virtualization. 
-    -	Type 2: Aka Client-side virtualization, where multiple OSs are managed on the client machine as opposed to on a server. The downsides of Type 2 are that the host OS consumes resources such as processor time and memory, and a host OS failure means that the guest OSs fail as well. 
+-	Virtual Operating Systems allow multiple OSs (called Virtual Machines) to run on one physical machine at the same time, while still being bound by the physical characteristics of the machine on which they reside.
+- Virtual Machines allows users to have multiple "virtual computers" to run different operating systems for testing software without requiring them to purchase multiple hardware devices.
+-	The **Hypervisor** is a software that allows multiple operating systems to share the same host and also manages the physical resource allocation of those virtual OSs. There are 2 types of Hypervisor:
+    -	**Type 1**: Also known as *Bare-metal virtualization*, is basically the operating system for the physical machine, it does not have a host OS involved and the system is dedicated to support virtualization. 
+    -	**Type 2**: Also known as *Client-side virtualization*, where multiple OSs are managed on the client machine as opposed to on a server. The downsides of type 2 are that the host OS consumes resources such as processor time and memory, and a host OS failure means that the guest OSs fail as well. 
 
 ### Embedded OS 
 Embedded Operating Systems are designed to be small and efficient, typically only being responsible for a single task. The upside is that they require very few hardware resources but the downside is there is little to no flexibility. An example of this kind of OS is Firmware.
