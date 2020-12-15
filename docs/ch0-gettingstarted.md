@@ -16,8 +16,8 @@ __Computer Hardware__
 __Computer Software__  
 [Ch. 04 - Operating Systems](ch04-operatingsystems)  
 [Ch. 05 - Software Applications](ch05-software)  
-[Ch. 06 - Software Development](ch06-softwaredev) 
-[Ch. 07 - Database Fundamentals](ch07-databases)     
+[Ch. 06 - Software Development](ch06-softwaredev)  
+[Ch. 07 - Database Fundamentals](ch07-databases)  
 __IT Infrastructure__   
 [Ch. 08 - Networking Concepts and Technologies](ch08-networking)   
 [Ch. 09 - Security Concepts and Threats](ch09-securityconcepts)  
