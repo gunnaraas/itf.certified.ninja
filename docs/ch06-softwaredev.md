@@ -5,7 +5,7 @@ title: "Ch. 06 - Software Development"
 # Exploring Programming Languages
 There are a wide variety of programming languages available for software developers to use. Languages vary on how they accomplish a task, but all accomplish the same goal, telling the computer what to we need it to do. Software developers usually specialize in one or two languages but have a basic foundational understanding of most popular languages. 
 
-Every language has it's own specific **syntax** which describes how the code must be written in order to be understood by the computer. The syntax can be the most challenging part of leraning a new programming languge, but the logic of how we solve problems is similar throughout all of them. 
+Every language has it's own specific **syntax** which describes how the code must be written in order to be understood by the computer. The syntax can be the most challenging part of learning a new programming language, but the logic of how we solve problems is similar throughout all of them. 
 
 ## Notational Systems 
 Understanding Notational Systems is a set of rules guiding the organization and use of certain character or symbols.
@@ -73,7 +73,7 @@ alarm_time = 07:00
 while time =/= alarm_time, be_quiet 
     else ring_alarm 
 ```
-In this example, the computer is always checking the time. When the time is 07:00, the statment "The time is not 07:00" is now false, so the else statement runs. 
+In this example, the computer is always checking the time. When the time is 07:00, the statement "The time is not 07:00" is now false, so the else statement runs. 
 
 ## Data Types 
 There can be some overlap between the definitions of data types, meaning that some data could appear to be multiple data types. Regardless of what it looks like, the data type is what it was defined to be within a program.
