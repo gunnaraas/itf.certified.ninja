@@ -11,19 +11,28 @@ When it comes to connecting computers, there are two common methods of doing thi
 **Internet Service Provider (ISP)** is the service company that allows users to connect to the internet. The internet is the most common type of external connection.
 
 ### Dial-Up
-**Dial-Up** (sometimes known as P.O.T.S. or Plain Old Telephone Service) requires a telephone to connect to a modem to connect to the internet.
-- The benefits of using dial up were: Cost (Its super cheap), Easy to set up and configure because all you need is a telephone line.
-- The only drawback is that, it was super slow and you could not connect more than one computer to it because it would slow down every other computer connected to it, in that network.
+**Dial-Up** requires a landline telephone connection (sometimes known as Plain Old Telephone Service or POTS) to connect to a modem to connect to the internet.
+- The benefits of using dial up were: Cost ($0-10/month), Easy to set up and configure because all you need is a telephone line.
+- The primary downside is that it is super slow (max speed of 56 KBps) and you can only have one computer connected at a time. The phone can also not be used while the computer is connected to the internet. 
 
 ### DSL 
 **DSL** (Digital Subscriber Line) also uses phone lines to connect to the internet.
-- It is faster than dial up. With this form of internet, you do not share your bandwidth with other users and it is generally more reliable than your other ISPs.
-- The downside is that this service is not readily available, it cost more per house hold for lower speeds, and it requires more hardware components to configure i.e. networking cards, network cables, DSL modem, phone cord and line filters for each phone in the home.
+Pros: 
+- It is faster than dial-up, but slower than cable or fiber. 
+- Unlike cable, you have a direct connection to your ISP and do not share bandwidth with your neighbors. 
+- It is generally more reliable than other internet connection types.
+- Allows multiple computers to be connected to one modem, doesn't prevent landline phones from making or receiving calls. 
+Cons:
+- Not as widely available as dial-up, cellular, or satellite.
+- More expensive than dial-up ($40-60/month). Similar price to cable or fiber. 
+- May require additional equipment (modem, router, network card), whereas DSL just requires a built-in modem.
 
 ### Cable 
 - **Cable** uses a coaxial cable to connect to the modem than a telephone line. It is very difficult to distinguish data transfer speeds because there are many factors that come into consideration and they vary.
-- Pros: Its much faster than dial-up and it much faster than DSL (particularly during uploading), no telephone line needed and it is very reliable.
-- Cons: It requires more hardware to set-up such as Network card, a network cable and a cable modem (which you are charged monthly to lease the modem), your band width is shared with others in your neighborhood and the cost is higher with Lower speeds starting around 20-30 dollars per month and the advertised running at $100 or more.  
+Pros: 
+- Its much faster than dial-up and it much faster than DSL (particularly during uploading), no telephone line needed and it is very reliable.
+Cons: 
+- It requires more hardware to set-up such as Network card, a network cable and a cable modem (which you are charged monthly to lease the modem), your band width is shared with others in your neighborhood and the cost is higher with Lower speeds starting around 20-30 dollars per month and the advertised running at $100 or more.  
 
 ### Fiber 
 - Fiber-Optic Internet is very impressive when it comes to its speeds and the amount of bandwidth that it delivers.
