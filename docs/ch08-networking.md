@@ -8,7 +8,7 @@ title: "Ch. 08 - Networking Concepts and Technologies"
 When it comes to connecting computers, there are two common methods of doing this, via wired and or wireless. Although both methods have many other benefits two in particular do stand out. For a wired connection speed and interference reduction stands out. For wireless, portability and ease of access stands out.
 
 ## Choosing External Network Connections 
-**Internet Service Provider (ISP)** is the service company that allows users to connect to the internet. The internet is the most common type of external connection.
+An **Internet Service Provider (ISP)** is the service company that allows users to connect to the internet. The internet is the most common type of external connection.
 
 ### Dial-Up
 **Dial-Up** requires a landline telephone connection (sometimes known as Plain Old Telephone Service or POTS) to connect to a modem to connect to the internet.
@@ -16,7 +16,7 @@ When it comes to connecting computers, there are two common methods of doing thi
 - The primary downside is that it is super slow (max speed of 56 KBps) and you can only have one computer connected at a time. The phone can also not be used while the computer is connected to the internet. 
 
 ### DSL 
-**DSL** (Digital Subscriber Line) also uses phone lines to connect to the internet.
+**DSL** (Digital Subscriber Line) also uses phone lines to connect to the internet. In the Twin Cities metro area, CenturyLink is the primary DSL provider. 
 Pros: 
 - It is faster than dial-up, but slower than cable or fiber. 
 - Unlike cable, you have a direct connection to your ISP and do not share bandwidth with your neighbors. 
@@ -28,16 +28,21 @@ Cons:
 - May require additional equipment (modem, router, network card), whereas DSL just requires a built-in modem.
 
 ### Cable 
-- **Cable** uses a coaxial cable to connect to the modem than a telephone line. It is very difficult to distinguish data transfer speeds because there are many factors that come into consideration and they vary.
+- **Cable** uses a coaxial cable to connect to the modem than a telephone line. It is very difficult to distinguish data transfer speeds because there are many factors that come into consideration and they vary. In the Twin Cities metro area, Comcast (Xfinity) is the primary Cable internet provider. 
 Pros: 
 - Its much faster than dial-up and it much faster than DSL (particularly during uploading), no telephone line needed and it is very reliable.
 Cons: 
 - It requires more hardware to set-up such as Network card, a network cable and a cable modem (which you are charged monthly to lease the modem), your band width is shared with others in your neighborhood and the cost is higher with Lower speeds starting around 20-30 dollars per month and the advertised running at $100 or more.  
 
 ### Fiber 
-- Fiber-Optic Internet is very impressive when it comes to its speeds and the amount of bandwidth that it delivers.
-- The Benefits of Fiber Optic are incredible speeds and bandwidth.
-- The Cons with Fiber Optics is cost and availability meaning, it simply cost too much all around, the cables, the installation and operation all cost a lot, in addition its availability is very limited to the amount of people that can connect to it. It is more expensive than cable.
+**Fiber-Optic** internet connects transmit data as bursts of light through glass or plastic *fibers* (hairs or strings), allowing your data to be transmitted at the speed of light. This gives users very high bandwidth, low latency connections. The primary Fiber providers in the Twin Cities metro area are US Internet and CenturyLink. 
+Pros: 
+- Most bandwidth available from any internet connection type, usually 1+ Gigabit per second, allowing for large files to be downloaded or uploaded very quickly. 
+- Lowest latency (time to communicate between your computer and the server), making it great for time sensitive applications like video conferencing and online gaming. 
+- Usually more reliable than other options, because the infrastructure and technology is newer. 
+Cons: 
+- Limited availability: Fiber internet is generally only available in wealthier neighborhoods of densely populated cities (e.g. Uptown Minneapolis).
+- Cost: The monthly fee to get fiber optic internet access can be more than Cable or DSL (but not always). In addition, your computer and other devices may need an upgrade to benefit from the full speed available on the connection.   
 
 ### Satellite 
 - Satellite use satellite dish to connect to the internet, by receiving data from an orbiting satellite and relay station that is connected to the internet.
