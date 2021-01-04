@@ -17,11 +17,13 @@ An **Internet Service Provider (ISP)** is the service company that allows users 
 
 ### DSL 
 **DSL** (Digital Subscriber Line) also uses phone lines to connect to the internet. In the Twin Cities metro area, CenturyLink is the primary DSL provider. 
+
 Pros: 
 - It is faster than dial-up, but slower than cable or fiber. 
 - Unlike cable, you have a direct connection to your ISP and do not share bandwidth with your neighbors. 
 - It is generally more reliable than other internet connection types.
 - Allows multiple computers to be connected to one modem, doesn't prevent landline phones from making or receiving calls. 
+
 Cons:
 - Not as widely available as dial-up, cellular, or satellite.
 - More expensive than dial-up ($40-60/month). Similar price to cable or fiber. 
@@ -29,34 +31,44 @@ Cons:
 
 ### Cable 
 - **Cable** uses a coaxial cable to connect to the modem than a telephone line. It is very difficult to distinguish data transfer speeds because there are many factors that come into consideration and they vary. In the Twin Cities metro area, Comcast (Xfinity) is the primary Cable internet provider. 
+
 Pros: 
 - Its much faster than dial-up and it much faster than DSL (particularly during uploading), no telephone line needed and it is very reliable.
+
 Cons: 
 - It requires more hardware to set-up such as Network card, a network cable and a cable modem (which you are charged monthly to lease the modem), your band width is shared with others in your neighborhood and the cost is higher with Lower speeds starting around 20-30 dollars per month and the advertised running at $100 or more.  
 
 ### Fiber 
 **Fiber-Optic** internet connects transmit data as bursts of light through glass or plastic *fibers* (hairs or strings), allowing your data to be transmitted at the speed of light. This gives users very high bandwidth, low latency connections. The primary Fiber providers in the Twin Cities metro area are US Internet and CenturyLink. 
+
 Pros: 
 - Most bandwidth available from any internet connection type, usually 1+ Gigabit per second, allowing for large files to be downloaded or uploaded very quickly. 
 - Lowest latency (time to communicate between your computer and the server), making it great for time sensitive applications like video conferencing and online gaming. 
 - Usually more reliable than other options, because the infrastructure and technology is newer. 
+
 Cons: 
 - Limited availability: Fiber internet is generally only available in wealthier neighborhoods of densely populated cities (e.g. Uptown Minneapolis).
 - Cost: The monthly fee to get fiber optic internet access can be more than Cable or DSL (but not always). In addition, your computer and other devices may need an upgrade to benefit from the full speed available on the connection.   
 
 ### Satellite 
-- Satellite use satellite dish to connect to the internet, by receiving data from an orbiting satellite and relay station that is connected to the internet.
-- Satellite connections are much slower than broadband connections and is not a reliable, due to interference due to weather and satellite alignment.
-- Connection delay or Latency meaning the amount of time it takes for the data to be transmitted and received via the satellite.
-- The advantages of using satellite would be to not have to use cables or any wires to configure and set up especially when a user is in location that is not near place that is difficult to run wires around.
-- Point-to-multipoint is the second reason to why Satellite is so good, meaning it transmits on signal to a number of receivers simultaneously, which is why it is used for other applications such as: i.e. GPS, to broadcast television and radio signals.
+**Satellite Internet** uses satellite dishes to connect you to the internet, sending and receiving data to and from from an orbiting satellite and relay station that is connected to the internet. New technologies (like Starlink) are making satellite internet a more usable experience, but currently the best use of satellite technology is point-to-multipoint communications (satellite TV and radio), where many people are receiving the same data, instead of personal internet use.  
+
+Pros: 
+- Satellite internet is available almost* anywhere with a view of the sky, allowing you to connect to the internet from very remote locations (including ships in the middle of the ocean). * Satellite access is limited near the North and South poles. 
+
+Cons: 
+- Due to the distance your data needs to travel (to space and back to Earth), satellite connections are very high latency. Bandwidth is also fairly limited. Online gaming and streaming videos is a bad experience on a satellite connection. 
+- Satellite internet can be very expensive, and often comes with strict bandwidth caps (example: you can only use 50GB of data a month.)
 
 ### Cellular 
-- Cellular (Cellular Networking) is what allowed us to be able to connect to the internet, which was once something that was only afforded to only computers.
-- Cellular Technical Specifications has major standards that are used around the world, which include the Global System for Mobile Communications (GMS) and Code Division Multiple Access (CDMA).
-- GMS: is the most popular, boasting more than 1.5 billion users in 210 countries.
-- CDMA: is the only cellular standard that is currently used in the United States.
-Both standards are not compatible with each other, meaning if you had GMS standard you cannot change standards to the CMDA.
+**Cellular Networking** is what allows us to connect to the internet from mobile devices (smartphones and tablets), which was once something that was only available on computers.
+- Cellular Technical Specifications has major standards that are used around the world, which include the Global System for Mobile Communications (GSM) and Code Division Multiple Access (CDMA).
+    - GSM is the most popular, boasting more than 1.5 billion users in 210 countries. If the phone uses a SIM card, it is likely using the GSM standard*. AT&T and T-Mobile are two GSM carriers in the United States. 
+    - CDMA is only used in the United States by Verizon and Sprint. With CDMA, the phone has a unique identifier that must be registered with your cellular provider before it can connect to the cellular network. 
+    - Note: 4G LTE and 5G phones on CDMA networks now use SIM cards as well. 
+
+GSM and CDMA use different radios to communicate with the cellular network, meaning if you had a GSM phone, you usually can't switch to a CMDA provider and keep the same device (iPhones and some others include both radios).
+
 - Mobile Hotspots are devices or network cards that are designed to allow computers and other non-cellular cards to access the internet through cellular transmissions.
 
 ### RF
