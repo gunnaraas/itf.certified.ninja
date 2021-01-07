@@ -2,7 +2,6 @@
 id: "ch08-networking"
 title: "Ch. 08 - Networking Concepts and Technologies"
 ---
--	Small Office Home Office (SOHO) is a small network (Connection) of Computers with fill up a small house hold and or a small business.
 
 # Exploring Connection Types and Features 
 When it comes to connecting computers, there are two common methods of doing this, via wired and or wireless. Although both methods have many other benefits two in particular do stand out. For a wired connection speed and interference reduction stands out. For wireless, portability and ease of access stands out.
@@ -115,6 +114,7 @@ There are two components to understanding network connectivity, the first is har
 - A **Network Switch** is a device that allows us to connect multiple wired Ethernet connections to the network. Switches examine the header (metadata) of incoming data packets and forward it properly to the right port and only to that port by using the MAC address of the device. 
     - Like a switch, a **Network Hub** connects multiple wired devices together. However, hubs do not determine which device a data packet is intended for, it instead copies that packet and sends it to all connected devices. Network hubs can seriously slow down a network, and are not used in modern networking.  
 - **Access Points** are devices that Wi-Fi devices communicate with in order to connect with the network. 
+- A **SOHO (Small Office or Home Office) Router** is an all-in-one device that combines a modem, router, switch, and wireless access point. This is commonly provided by an ISP to residential and small business internet customers. 
 
 ### Firewalls
 - Firewalls are the gatekeepers that protect your network from hackers and malware.
