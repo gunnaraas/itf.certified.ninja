@@ -125,66 +125,77 @@ There are two components to understanding network connectivity, the first is har
         - The **Demilitarized Zone (DMZ)** is a space between two firewalls, or the port used to connect servers that can be considered both public and private. You might put a server in the DMZ if you want it to be accessible from outside the network without opening up other connected devices to potential attacks. 
 
 ## Networking Protocols Basics
-Networking protocols are a lot like human languages in that they are the languages that computers speak when talking to each other. Although there are many different protocols, the most popular protocol has been TCP/IP because it is the protocol that was used for the internet.
-- Protocol is a set of rules that govern communications.
+Networking protocols are standardized sets of rules that computer applications use to communicate across networks. The TCP/IP protocol is a popular framework for explaining the protocols being used in different network operations.
 
 ## TCP/IP Essentials
-Computers must follow rules for them to communicate effectively. The Department of Defense created the DoD Model which has 4 layers that specify the tasks that need to happen: Process/Application, Host-to-Host, Internet, and Network Access.
-- Understanding IP Addressing helps understand how our devices communicate and identify each other on the network.
-- IP Address is a 32-Bit hierarchical address that identifies a HOST (device) on a network. i.e. 192.168.10.55
-- Host is any device that is assigned an IP address to it.
-- Network ID: Are the set of numbers that Identify the network that devices connect to.
-- Host ID: Are the set of numbers that identify the device within the network.
-- Subnet Mask: Is how computers tell the different between the Network ID and HOST ID.
-- Default Gateway: It the ability of the router to stand as the door between the internal network and the outside world.
-- DHCP and DNS stands for Dynamic Host Configuration Protocol (DHCP) and Domain Name System (DNS).
-- DHCP: Can be configured to provide (assign) IP configuration information automatically to clients (HOST) or have the Administrator configure this themselves by assigning a Static IP Address.
-- DNS: Assigns an IP address to a domain name, making it easy for the navigator to simply enter address text rather than memorizing the IP address. i.e. converting www.google.com to 72.14.205.104.
-- Static IP Addressing is the process in which the system Administrator assigns IP addresses manually to each HOST.
-- Uniform Resource Locator a location or address identifying where documents can be found on the internet.
-- Automatic Private IP Addressing is a computer that automatically assigns itself an IP address and cannot connect to the Internet.
-- Public vs. Private IP Address
-- Public IP: Connects to the Internet and Routable.
-- Private IP: Local IP, doesn’t connect to the Internet and is nonroutable.
-- Network Address Translation (NAT): is the system that uses the router’s IP address as Public to send and receive data to and from the Internet, while your HOST device is given a Private IP address for your Internal network.
+Computers must follow rules for them to communicate effectively. The US Department of Defense created the DoD Model which has 4 layers that specify the tasks that need to happen: 
+- Process/Application 
+- Host-to-Host 
+- Internet  
+- Network Access 
+
+There are two primary ways of identifying a computer on a network, **IP Addresses** and **MAC Addresses**: 
+- **IP addresses** are 32-Bit hierarchical addresses that identifies a device on a network. For example: 192.168.10.55
+    - Network ID: Are the set of numbers that Identify the network that devices connect to.
+    - Host ID: Are the set of numbers that identify the device within the network.
+
+A number of settings help connect a computer to the network:
+The **Subnet Mask** identifies to a computer tell a computer which part of a IP address identifies the *network*, and what identifies the *host*.
+- For example: With a subnet mask of **255.255.255.0** and an IP address of **192.168.0.50**, the first 3 numbers (*192.168.0*) identify the network, and the last number (*50*) identifies the device on that network.
+
+The **Default Gateway** points to the IP address of the router on the network, or the gateway between the internal network and the rest of the world (internet).
+
+A **DHCP Server** automatically assigns IP addresses to devices that connect to the network. While this is not required, if missing or broken - a network administrator must manually assign an address to every device. 
+- Automatically assigned IP addresses are also known as **Dynamic IP Addresses**, as they can change over time. 
+- A **Static IP Address** can be assigned to permanently give a device an address. This is most useful for devices that provide a service to a other network devices (servers, printers, etc.). 
+- If a Windows computers can't connect to a DHCP server, and does not have a Static IP assigned to it, APIPA (Automatic Private IP Addressing) will give the computer a temporary address (starting with *169.254.xx.xx*). Computers in this state can still access resources on the internal network, but aren't able to access resources outside the network (internet).
+
+The **DNS (Domain Name Service) Server** helps translate a domain name (www.google.com) to an IP address (*72.14.205.104*). Without a DNS server, websites can only be accessed by directly navigating to the IP address of the web server. 
+
+### Public vs. Private IP Address
+Because of the number of internet connected devices in the world today, our computers have two IP addresses, public and private IP addresses 
+- **Public Addresses** identify a network over the internet. All devices connected to the same router have the same Public IP Address. 
+- **Private Addresses** identify individual devices inside a network. All devices have a unique private IP address. 
+- **Network Address Translation (NAT)** is a service running on the router that helps identify which device external information should be routed to. 
 
 ## Network Storage Options
-There are many different types of networks to storage options to connect to, examples	include file servers, NAS and Cloud Storage.
-- Local Network Storage are made of two types File serve and Network-Attached Storage.
-- File Server is a computer that is specialized to store user files.
-- Network-Attached Storage is storage device that is attached to the network interface card.
-- Redundant Array of Independent Disks (RAID) is a configuration that is used for network-based storage devices, which provides fault-tolerance services.
-- Cloud Storage Services is much easier to work with than the other network-based storage types, those include; you don’t need to buy hardware and it is easy to configure or install.
+Files are often stored over a network so that they can be accessed from multiple computers, usually for collaboration or backup purposes. Examples include file servers, NAS, and Cloud Storage.
+- A **File Server** is computer that runs special hardware, designed to store and share files over a network. These generally have large, high speed HDDs and a fast, wired network connection.
+- A **Network Attached Storage (NAS)** is a network connected hard drive, or set of hard drives, that works similarly to a File Server. These are generally easier to set up, while being slower or having fewer features. 
+- **Cloud Storage** services like Google Drive, OneDrive, or Dropbox are sometimes used as an alternative to having a dedicated device. These transfer files to data centers over the internet for backup and storage. While easy to use, these usually require a monthly subscription fee. Saving files the internet can also be slower than if using a local network device, depending on upload speed. 
+
+Network storage devices often use **Redundant Array of Independent Disks (RAID)** to store files. This is a storage configuration that allows multiple physical drives to be combined into one large logical drive, while also allowing for fault tolerance that allows drives to fail without data loss. We learn more about RAID in [Chapter 11](/docs/ch11-businesscontinuity).
 
 # Setting Up a Wireless Network
-It can be daunting when configuring a wireless Network, but it has become relatively easy of a task to configure and create connection. Most routers bought today come with wireless capability and have a four wire ports available not only for wired connectivity, but to also configure the router itself. Wireless router manufactures use different software, but you can usually configure their parameters with the built-in, web-based configuration utility that’s included with the product.
+With all these options, it may seem daunting to set up a wireless network, but it has become relatively easy of a task to configure and create connection. Most routers bought today come with wireless capability and have a four ethernet ports available not only for wired connectivity, but to also configure the router itself. Wireless router manufactures all run their own specific software, but you can usually configure their parameters with the built-in, web-based configuration utility that’s included with the product.
 
 ## Basic Configuration
-The Wi-Fi Alliance is the authorized expert in the field of wireless LANs.
-1. Accept the License Agreement is the process in which you complete the EUSA and register your router when installing the drivers or the software that the router comes with before initiating router configuration.
+The Wi-Fi Alliance is the authorized expert in the field of wireless LANs. While every wireless router is different, these general steps describe how to set up these devices:
+1. Accept the License Agreement is the process in which you complete the EULA and register your router when installing the drivers or the software that the router comes with before initiating router configuration.
 2. Connect the Router which would check see or verify if the router is capable to connect to the outside world. If there is an error message make sure that the router is powered and all basic troubleshooting steps have been taken e.g. router is connected to the ISP port on your house hold wall.
 3. Finish Basic Configuration will have the software determine if your router is working and if the default configurations are all set. During this process, you will also configure the what security parameters that you want to incorporate on your router.
-4. Secure the Network by changing the SSID from default, set security Protocol (WEP, WPA and WPA2) and finally Apply a new wireless password.
+4. Secure the Network by changing the SSID from default, set security protocol (WEP, WPA and WPA2) and finally Apply a new wireless password.
      - **Service Set Identifier (SSID)** is a unique name that is given to the wireless network, which the user can rename to identify their network.
      - **Passphrase** is the part were the user will issue a pass word for the network, which other users will use to connect to that network.
 5. Change the Administrator password and Update Firmware is important and should be done before exiting the configuration.  The admin password should not be the same as the wireless passphrase, this reduces security vulnerabilities within the system. Unless necessary, firmware should be updated only if the device is not working properly.
-6. Connect to the Network and Verify Internet Connectivity is done by checking if the wireless signal is being transmitted by the router through the devices network settings. [It’s important to note that mobile devices have the capabilities to connect to your router, meaning they should have a wireless receiver to pick up the signal.]
+6. Connect to the Network and Verify Internet Connectivity is done by checking if the wireless signal is being transmitted by the router through the devices network settings. (It’s important to note that mobile devices have the capabilities to connect to your router, meaning they should have a wireless receiver to pick up the signal.)
 
 ## Wireless Router Security
-- Open Portals provide potential users, access to a network without the need to enter a password. This may not be as secure because it may allow any wireless users to be able to connect to the network.
-- Captive portal is a type of open portal in which the user connecting to that network, is taken to a welcome page notifying the user of the conditions of the networks including which behaviors are permitted.
-- WEP Wired Equivalency Protocol, provided data transmission security, by providing the client a static key (Password) in order to communicate with a WEP-enabled device. WEP is vulnerable because of the nature of the static keys and weaknesses in the encryption algorithms.
-- WPA Wi-Fi Protected Access is an improvement over WEP, it followed the Temporal Key Integrity Protocol which used 128-bit and each packet is Dynamically allocated this type of key.
-- Temporal Key Integrity Protocol (TKIP) is an encryption protocol included as part of the IEEE 802.11i standard for wireless LANs (WLANs). This standard that was capable of allocating 128-bit Keys dynamically to each packet that being transmitted through wireless LAN.
-- WPA2 Wi-Fi Protected Access 2, made huge improvements over the WEP and WPA by implementing the Counter Mode CBC-MAC Protocol (CCMP), which is a protocol based on the Advance Encryption Standard (AES) algorithm.
-- Advance Encryption Standard (AES) is a symmetric block cipher chosen by the U.S Government to protect classified information and is implemented in software and hardware throughout the world to encrypt sensitive data.
+- **Open networks** provide users access to a public network without the need to enter a password. These pose significant security threats because anyone can access the network. Users should act with care (using a VPN or doing sensitive work, like online banking) on unsecured public networks. 
+- **Captive Portals** are used on some public networks to fix security issues with unsecured networks. These take users to a welcome page notifying the user of the terms and conditions of network access, including which behaviors are and aren't permitted.
+- **WEP (Wired Equivalency Protocol)** provided data transmission security, by providing the client a static key (Password) in order to communicate with a WEP-enabled device. WEP is vulnerable because of the nature of the static keys and weaknesses in the encryption algorithms.
+- **WPA (Wi-Fi Protected Access)** is an improvement over WEP, it followed the Temporal Key Integrity Protocol which used 128-bit and each packet is Dynamically allocated this type of key.
+    - **Temporal Key Integrity Protocol (TKIP)** is an encryption protocol included as part of the IEEE 802.11i standard for wireless LANs (WLANs). This standard that was capable of allocating 128-bit Keys dynamically to each packet that being transmitted through wireless LAN.
+- **WPA2 (Wi-Fi Protected Access 2)** made huge improvements over the WEP and WPA by implementing the Counter Mode CBC-MAC Protocol (CCMP), which is a protocol based on the Advance Encryption Standard (AES) algorithm.
+    - All wireless networks not using WPA2 should be considered insecure. 
+    - **Advance Encryption Standard (AES)** is a symmetric block cipher chosen by the U.S Government to protect classified information and is implemented in software and hardware throughout the world to encrypt sensitive data.
 
 ## Additional Wireless Router Services
-- Guest Access is for clients who need Internet access but aren’t allowed to see the rest of the network. Guest clients will need to know the SSID of the guest network and the password.
-- DHCP Dynamic Host Configuration Protocol automatically configures clients with IP addresses, this can be enabled by your router’s configuration options.
-- NAT Network Address Translation, allows you to use a private IP address internally but still get to the Internet. Basically it helps translate traffic coming from the internet identify the a local area network by assigning an Internet based IP to a internal LAN IP.
-- QoS Quality of Service is a strategy that allows an administrator to control resources, by setting different priorities for one or more types of network traffic based on different applications, data flows or users, this is typically meant for WANs not really for SOHO LANs.
-- Firewall are the software based security rules that can be configured to set internet access policy and blocking protocols such as HTTP, FTP, etc., along with limiting internet access times and implementing parental controls.
+- **Guest Access** is for clients who need Internet access but aren’t allowed to see the rest of the network. Guest clients will need to know the SSID of the guest network and the password.
+- **DHCP (Dynamic Host Configuration Protocol)** automatically configures clients with IP addresses, this can be enabled by your router’s configuration options.
+- **NAT (Network Address Translation)** allows you to use a private IP address internally but still get to the Internet. Basically it helps translate traffic coming from the internet identify the a local area network by assigning an Internet based IP to a internal LAN IP.
+- **QoS (Quality of Service)** is a strategy that allows an administrator to control resources, by setting different priorities for one or more types of network traffic based on different applications, data flows or users. This allows the network to reduce the bandwidth used by someone streaming videos or downloading large files, so they don't negatively impact the quality of more important voice or video calls.
+- **Parental Controls** can be configured to block access to inappropriate websites, or to disable internet access to devices at certain times. 
 
 # Summary
 In summary we discussed the hardware tools that are required to establish a connection and how to secure that network. Depending on the network choice, that will determine how secure your network would be and what would be required by other devices to connect to that network.
