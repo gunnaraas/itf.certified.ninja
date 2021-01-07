@@ -69,42 +69,60 @@ Cons:
 
 GSM and CDMA use different radios to communicate with the cellular network, meaning if you had a GSM phone, you usually can't switch to a CMDA provider and keep the same device (iPhones and some others include both radios).
 
-- Mobile Hotspots are devices or network cards that are designed to allow computers and other non-cellular cards to access the internet through cellular transmissions.
+- Mobile Hotspots are devices or network cards that are designed to allow computers and other non-cellular devices to access cellular networks.
 
 ### RF
-- Radio Frequency Internet (noncellular-wireless) is a broadband Internet access, that is least popular connection. A service provider uses a transmitter to broadcast a signal and a customer would have a radio receiver at the other end to pick up the signal. The receiver is then connected to a router or computer in a similar fashion as cable or DSL. It cost more than a wired connection for speeds similar to a wired connection.
+- Radio Frequency Internet (noncellular-wireless) is a broadband Internet access, that is least popular connection. A service provider uses a transmitter to broadcast a signal and a customer would have a radio receiver at the other end to pick up the signal. The receiver is then connected to a router or computer in a similar fashion as cable or DSL. It cost more than a wired connection for speeds similar to a wired connection. RF internet connections are useful in rural areas where it may be cost prohibitive to build a wired connection between distant homes.  
 
 ## Choosing Internal Network Connections 
-- Wired Network Connections form the backbone of nearly every network. Wired networks are faster and more secure than their wireless counterparts. There are two choices of connection types when it comes to wired connections: unshielded twisted pair (UTP) and Fiber-optic.
+
+### Wired Network Connections 
+Wired Network Connections form the backbone of nearly every network. Wired networks are faster and more secure than their wireless counterparts. There are two choices of connection types when it comes to wired connections: unshielded twisted pair (UTP), also known as Ethernet, and Fiber-optic.
+
 - Unshielded twisted pair (UTP): is a copper wired cable that transmits electrical pulses. It is mildly secure and susceptible to interception (wiretapping) and electromagnetic interference. Although it cost less that its Fiber optic counterpart.
+
 - Fiber-Optic: is a wire made of glass or plastic and transmits signals using light. Is extremely secure resistant towards wiretapping and electromagnetic interference. It is more expensive than its Copper wired counterpart to set-up and can cover long distances.
 Both forms of wired connections require than the user also purchase the equipment that goes along with the wire i.e. the correct network cards, cables, location in which to connect the devices, etc. When configuring a wired network, you want to think about the speed, distance and cost.
 
-- Wireless Network Connections are convenient, which is the number one reason to why people prefer them over all other types of connections, however they a bit more expensive than their wired copper counterparts. In general, wireless connections typically/ if not always face the same security flaws which are mechanical and environmental interference.
-- Wireless LAN (WLAN) has only one option available today, which is IEEE 802.11 standard. When determining this connection, you must consider, speed, security, distance and cost. It is best to start with the most robust wireless technology because it is backward compatible with the previous versions of 802.11a/b/g.
-- Bluetooth is designed for a Wireless Personal Area Network (WPAN), meaning it is not the right technology to use for your home office or Small business. It is perfect for connecting devices such as smartwatches, mice, keyboards, headsets and printers (In close proximity). Bluetooth devices can connect up-to several other devices in one piconet.
-- WPAN Wireless Personal Area Network is a small and network that connects smaller mobile smart devices, at a close proximity.
-- Piconet is an ad hoc network, meaning that two Bluetooth devices are connected by getting close enough to each other.
-- Infrared is a connection created through waves, these waves are longer than light and shorter than microwaves. The communication approach model used by this technology is a walk-up and point-to-point. Although atmospheric conditions may disrupt infrared waves, there are no concerns of interference or signal conflicts and security is not much of an infrared issue since the maximum range in order to communicate is roughly 1 meter.
-- Walk-up and Point-to-point meaning you need to be very close and be in the line of sight with the device you want to communicate with. i.e. Remote controls.
+### Wireless Network Connections 
+Wireless Network Connections are convenient, which is the number one reason to why people prefer them over wired connections, however they are a bit more expensive than their wired copper counterparts. Wireless is slower and less reliable than a wired connection, and connection quality can be impacted by mechanical and environmental interference. There are also security concerns with wireless connections, as attackers do not need direct physical access to your hardware to enter your network. 
+
+- **Wireless LAN (WLAN)**, or **Wi-Fi**, is governed by the IEEE 802.11 standard. These rules set standard speeds, distances, and ensure that all Wi-Fi devices adhering to the standard are compatible with a signal standard. When determining this connection, you must consider, speed, security, distance and cost. It is best to start with the most robust wireless technology because it is backward compatible with the previous versions of 802.11a/b/g/n.
+
+#### 802.11 Standards 
+
+| Name | Max Speed | Frequency | Distance (Indoors) | Distance (Outdoors)|
+|------|-----------|-----------|--------------------|--------------------|
+| 802.11a  |  52 Mbit/s | 5 GHz | 35 m | 120 m |
+| 802.11b  |  11 Mbit/s | 2.4 GHz | 35 m | 140 m |   
+| 802.11g  |  54 Mbit/s | 2.4 GHz | 38 m | 140 m | 
+| 802.11n  |  600 Mbit/s  | 2.4 and 5 GHz | 70 m | 250 m | 
+| 802.11ac |  800 Mbit/s | 5 GHz | 35 m | 120 m | 
+| 802.11ax |  2.5-10 Gbit/s* | 2.4, 5, and 6 GHz | 30 m | 120 m | 
+
+*802.11ax (Wi-Fi 6) is still being developed, these speeds are theoretical. 
+
+- **Bluetooth** is designed for a Wireless Personal Area Network (WPAN), or a network of devices used by one user or one device. While not appropriate for a network consisting of multiple users devices, it is perfect for connecting devices such as smartwatches, mice, keyboards, headsets and printers (in close proximity).
+
+- **Infrared** is a connection created through waves, these waves are longer than light and shorter than microwaves. This requires a line of sight between the two devices, and is what is used for a TV remote. Some older portable devices (think PocketPC, PDAs) would use this to transfer files between devices. Other technologies, like AirDrop, have largely replaced Infrared. 
 
 # Understanding Network Connectivity Essentials
-There are two components to understanding network connectivity, the first is hardware, which is the hardware used to connect computing devices to the network and the second is using protocol, which is the language that computer use to communicate with each other on a network. Another thing to also consider would be methods of storing data through the network.
+There are two components to understanding network connectivity, the first is hardware, which is the devices used to connect computing devices to the network and the second is using protocols, or the languages that computer use to communicate with each other on a network. Another thing to also consider would be methods of storing data through the network.
 
 ## Common Networking Devices
-- Modem are used to connect to a network via, telephone lines, by converting digital signals from a computer into analog signals that can be transmitted over phone lines and back again.
-- Switch are central to most networks; they examine the header of incoming data packets and forward it properly to the right port and only to that port by using the MAC address of the device. They typically use lights to indicate good (flickering green) and bad connections (amber).
-- Access Point aka Wireless Access Point (WAP), is any point that allows a user to get on a network. This device allows users to connect to the network wirelessly.
-- Router is a highly intelligent network connectivity device that can connect multiple network types to each other. Connecting devices through their logical IP addresses. Also, more devices can be connected through routers than switches and they could be wired or wireless.
+- **Modem** is a combination of the words modulate (convert from digital to analog) and demodulate (convert from analog to digital). Modems are used to connect to a network via cable or telephone lines, which are only capable of transmitting data in the analog format. 
+- **Routers** connect multiple networks together, and help data flow clearly between networks. A router is the most essential part of any network.  
+- A **Network Switch** is a device that allows us to connect multiple wired Ethernet connections to the network. Switches examine the header (metadata) of incoming data packets and forward it properly to the right port and only to that port by using the MAC address of the device. 
+    - Like a switch, a **Network Hub** connects multiple wired devices together. However, hubs do not determine which device a data packet is intended for, it instead copies that packet and sends it to all connected devices. Network hubs can seriously slow down a network, and are not used in modern networking.  
+- **Access Points** are devices that Wi-Fi devices communicate with in order to connect with the network. 
+
+### Firewalls
 - Firewalls are the gatekeepers that protect your network from hackers and malware.
-- Firewalls filter network traffic filter incoming and outgoing traffic of your network, determined by your system Administrator.
-- Access Control List are the list of rules or conditions on what traffic comes into a network and what goes out.
+- Firewalls filter incoming and outgoing traffic of your network depending on rules set by the Access Control List. This is a list of rules or conditions on what traffic is allowed to enter or leave the network.
 - Firewalls can be software-base, hardware-based or a combination of both
-- There are two type of firewalls: network-based and host-based
-- Network-based: Protects computers and almost always is a hardware solution with software on it.
-- Host-based: protects only one computer and are almost always software solutions.
-- Network-based firewalls separate pubic vs. Private networks and can also create a DMZ
-- Demilitarized Zone: is a space between two firewalls, or the port used to connect servers that can be considered both public and private i.e. web and email servers.
+    - Host-based: protects only one computer and are almost always software solutions. Windows Defender Firewall is an example of a host-based firewall found on all Windows computers.
+    - Network-based: Protects the entire network. This is usually it's own device, found in larger networks, but can also be software running on the router.  
+        - The **Demilitarized Zone (DMZ)** is a space between two firewalls, or the port used to connect servers that can be considered both public and private. You might put a server in the DMZ if you want it to be accessible from outside the network without opening up other connected devices to potential attacks. 
 
 ## Networking Protocols Basics
 Networking protocols are a lot like human languages in that they are the languages that computers speak when talking to each other. Although there are many different protocols, the most popular protocol has been TCP/IP because it is the protocol that was used for the internet.
