@@ -180,7 +180,7 @@ In this model, the user gets to set the security restrictions for files they cre
 This model is very flexible, and puts very few burdens on the system administrator or IT department. However, giving users this much control over access control will almost always lead to the Principle of Least Privilege being ignored. 
 
 #### Role-Based Access Control 
-In this model, all users have a number of roles assigned to their account. The system administrator allows access to different resources based on the roles a user is assigned. The roles necessary to view or edit a file are set in the **Access Control List (ACL)**
+In this model, all users have a number of roles assigned to their account. The system administrator allows access to different resources based on the roles a user is assigned. The roles necessary to view or edit a file are set in the **Access Control List (ACL)**.
 
 For example: John Smith has the following roles assigned with his account: *Sales Department*. His roles allow him access to the resources in the Sales Department drive only. He gets a promotion and the *Management* role is assigned to his account. He now also has access to the Managers, Human Resources, and Payroll drives. 
 
