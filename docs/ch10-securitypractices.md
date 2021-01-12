@@ -3,96 +3,97 @@ id: "ch10-securitypractices"
 title: "Ch. 10 - Security Best Practices"
 ---
 # Understanding Security Best Practices
-In the world of computers, there is no guarantee that users are safe. User’s may follow all of the best practices and still it would not be enough, however the goal of this chapter is to learn how to make user’s device as difficult to penetrate as possible, which would make it un appetizing for attackers. This chapter will educate users in how to Harden their device, manage users and encrypt data. Just as you wouldn’t want to walk in a dark alley at night, the same concept is applied to your computer in a network filled with other computers.
+The only way to 100% guarantee your computer is completely safe from hackers is to never connect it to the internet, not install any software, and not let anyone use it. However, for most of us, that'd make our computer useless. However, there are some best practices to keep our devices safer and more secure. While it won't keep us 100% safe, it'll make it challenging enough for hackers that they will hopefully give up and focus on easier targets. 
+
+Just like you wouldn't want to walk down a dark alley in the middle of the night, there are some things you don't want to do on your computer. This chapter will provide you with information that will help improve your devices security. 
 
 ## Device Hardening
-Device Hardening are the proactive steps that a user/s take at the local machine (their	computer/s) to reduce the likelihood of a successful attack. Concepts behind device hardening include: Updating Devices and Using System Passwords, protecting against Network Threats, Removing and Disabling Software and Services, and Browsing the internet safely.
-- Updating Devices and Using System Passwords is the first step to ensure that your device is secure.
-- Using System Passwords prevents users from accessing the device (if the device was stolen).
-- Desktop and Laptops: Simply enabling a system password through BIOS and enabling a Screen save password would deny access.
-- Mobile Devices: simply enabling a lock screen and passcode would deny access to the device.
-- Android: Configured through Settings > Security.
-- iPhone: Configured through Settings > Touch ID & Passcode.
-- Updating devices: Secure devices by making sure that the any software-based vulnerabilities have been fixed if not patched.
-- Windows: Windows Update utility updates performs updating services.
-- Mobile devices:
-- Apple iOS: Settings menu > General > Software Update.
-- Android OS: Settings menu > About Phone > System Updates.
-- Protecting Against Network Threats can be very difficult because that is were Malware lies. There are four classes of applications that can be used to protect your device/ system from malware and hackers:
-- Antivirus Software finds viruses by scanning all the files on a user’s computer system. Antivirus detects viruses by searching files for redirecting code and/or looking for files with virus signatures. Once a virus is discovered, Antivirus software may prompt the user to delete or quarantine the virus.
-- Quarantine: Placing the virus in an off-limits area so that it cannot run, but the virus is still in the user’s system.
-- Deletion: removing the infected file or virus from a user’s system.
-- Redirect code: is code that makes an applications command and code revolve around virus, while running a separate task.
-- Virus Definition: is a snippet of a virus’s code that gets compared to an antivirus software database of virus definitions for detection.
-- Antispyware Software applications look for know spyware and adware programs and offer to disable them or remove them from a user’s system. They do this by looking for (comparing) definitions, that is snippets that identify a spyware or adware component. Antispyware applications are most effective when their definitions are up-to-date.
-- Antispam Software is software that is used to capture spam. There typically is no harm with spam except when its used to perpetrate fraud, either by trying to sell useless or nonexistent products or navigating users to phishing websites that may contain viruses or other malware.
-- Spam refers to unwanted junk email.
-- Diagnosing and Fixing Malware Infections can either be simple or complex. Typical symptoms when Diagnosing a computer/ machine that is infected would include: Sluggish system, CPU and Memory usage unusually high, perpetual warning messages that won’t go away, receiving strange emails and finally pop-up ads whenever the user is using a browser.
+Much of the time - it's enough to just make your devices harder to hack than the average user. We do this through a practice known as *device hardening*. These are proactive steps we can take to reduce the likelihood of a successful hacking attempt. 
+
+### Updating Devices and Using System Passwords
+As we discussed in Chapter 9, keeping our operating system updated protects us from known security vulnerabilities. Most serious hacks are successful because of old software with known security vulnerabilities that would've been fixed with regular updates. 
+
+On Windows, updates are installed using the Windows Update utility (found in the Settings app). On macOS, updates are found in the App Store and in System Preferences. iOS and Android devices can be updated through the Settings app as well.  
+
+Just like we wouldn't let our email, bank accounts, and social media be available without a password, we should make sure that our devices have a password as well. Failing to use a password means that users with physical access to the device (for example: if your laptop is stolen) can access all your data. It can also allow users with remote access to easily disable security precautions, like anti-malware software, that you might have in place. If your device supports it, it's generally a good idea to enable disk encryption so that your data remains private to those who don't have the password (key). 
+
+### Protecting against Network Threats 
+As we learned in Ch. 09 - most malware enters our computer via the internet. Thankfully, software exists that can help defend us from these threats. 
+
+**Antivirus** software can alert you when a virus is found on your machine. Every virus has a unique *signature* that identifies it, and the antivirus software works by scanning all your files for files with a matching signature. Today, software is generally capable of detecting all types of malware, but they still market it as antivirus as the terms are better understood by the general consumer. 
+If it detects a virus, it may offer you one of a few different options: 
+- Quarantine: Placing the virus in an off-limits area so that it cannot run or damage other files without actually deleting it from your system.
+- Remove: Securely erases the identified files from your device.
+- Allow: Allows the virus to remain on your computer. This is not recommended unless you know what you're doing. 
+
+**Antispyware** applications are specifically designed to identify and remove spyware from your computer.  
+
+**Antispam** is used to identify and delete unwanted spam (usually email) messages. While spam emails can't damage your computer, it's annoying and can lead to fraud. Today, most email providers have anti-spam programs built-in so you don't need your own, but some businesses will pay for additional spam protection. 
+
+**Firewalls** monitor your network traffic and block unwanted information from entering or leaving your machine. Most computers come with a software (host-based) firewall preinstalled. Large corporate networks might have a standalone firewall device, which looks similar to a server, scanning all the traffic on a network. 
+
+### Diagnosing and Fixing Malware Infections 
+As an IT professional, you likely will be tasked with diagnosing and fixing a computer that has been infected with malware.
+Common signs of malware infection include: 
+- Computer is slower than usual 
+- CPU, GPU, and memory usage is unusually high, even when no programs are running. 
+- Warning or error messages that won't go away 
+- Contacts start receiving messages from your account that you didn't send 
+- Large number of ads and pop-ups when using your browser
 
 The following 5 steps are used to fix an infected system:
-1.	Identify malware symptoms.
-2.	Quarantine the infected system.
-3.	Remediate infected systems.
-4.	Schedule scans and updates.
-5.	Educate the end user to avoid a repeat performance.
+1.	Identify malware symptoms
+2.	Quarantine the infected system (disconnect from the network to prevent spread) 
+3.	Remediate infected systems (run antimalware programs or restore computer from a backup)
+4.	Schedule scans and updates
+5.	Educate the end user to avoid a repeat performance
 
-- Software Firewalls monitor and filter network traffic. They protect your network resources from bad traffic generated by hackers, and they simultaneously prevent computers on your network from accessing undesirable content on the Internet. There are two different types of firewalls, network-based and host-based.
-- Network-based: are firewalls for the network.
-- Host-based: are firewalls for the computer or local machine.
-- Removing and Disabling Software and Services may not seem like a big problem but it is. Unused programs and features may cause security holes that hackers would love to exploit. Because a user is not using a particular program, an attacker may plant a bug within that program and continue to run tasks in the background without the user noticing.
-- Removing Unwanted or Unnecessary Software from your system is the best method of preventing your system from being vulnerable. Ignoring pre-installed that is not being used means that users may not have the software maintain updates which could pose security risks to the device.
-- Disabling Unused Communication Methods is another form of protecting a user’s device from unwanted traffic e.g. Disabling Bluetooth service to prevent bluejacking, or disabling Near-field communication (NFC) to prevent unwanted transfer of information to their device. This issue typically affects Mobile devices and can be prevented by going to the mobile devices settings and disabling the configurations.
-- Disabling Unused Services is sometimes automatically done by the OS, however if a user knows what they are doing it is important to make sure that they are disabling services that they are not using.
-- Disabling AutoPlay is a best practice to protect devices/computers from allowing unknown external storage devices from automatically running once plugged in. The reason is that the media (Flash drive, DVD, CD) could contain malware, which would install automatically once the drive has been plugged in.
-- Browsing the Internet Safely doesn’t guarantee protection, however it allows user navigating the web, be aware of the potential dangers of Browsing the Internet. Below are the techniques that can be implemented to improve Browser safety:
+### Removing and Disabling Software and Services 
+Unused programs and features may cause security holes that hackers would love to exploit. Because a user is not using a particular program, an attacker may plant a bug within that program and continue to run tasks in the background without the user noticing. Therefore, if you are no longer using a piece of software, it's best to uninstall it from your device. 
+
+On desktop and laptop computers, you may wish to disable **AutoPlay**. This is a feature that will automatically run programs stored on a external storage device, and can be used to automatically run malware when an infected storage device is connected. Of course, it's also smart to not connect random flash drives or disks you find as well!
+
+### Disabling Unused Communication Methods
+If you're not using a certain communication method, it should be disabled so that bad actors can't access your device through it. Typically impacting mobile devices - this can include disabling Bluetooth to prevent Bluejacking (sending spam to your phone via Bluetooth) and Bluesnarfing (stealing data from your phone via Bluetooth), as well as disabling NFC to prevent unauthorized data transfer to nearby devices. 
+
+### Browsing the Internet Safely
+While your web browser is one of the main routes malware enters your computer, safe browsing practices can be used to limit the dangers of using the internet. Below are the techniques that can be implemented to improve Browser safety:
 - Keep your browser up-to-date, older browsers have greater potential for security exploits.
 - Manage plugins, add-on, toolbars, and extensions. This reduces potential holes to the system and consumption of system resources.
 - Manage security settings properly by configuring browser cookie settings, clearing cache and enabling pop-up blocking.
-- Know how to recognize secure websites by avoiding sites that only have HTTP: or invalid certificates. And also going to sites that have HTTPs, which can be done by accessing the browser settings. Finally disabling browser AUTOFILL which is a feature that automatically populates fields in a form on a web page for a user.
-- Tips for Safe Browsing the web will help users become the opportunities that hackers or attackers take advantage of when a user navigates the web. Web browsers work by downloading and displaying web pages, when a user request a website, the page is downloaded. Hackers and attackers take advantage of the opportunities presented during download, these individuals could perform activities such as intercepting the server or running scripts that also contain malicious code that infects a user’s system.
-- Do not visit questionable sites such as: sites that offer free software downloads, are filled with hate-themed material and Adult content websites.
-- Limit the use of personally identifiable information such as name, address, other contact information, names of family members, other information considered private.
-- Personally, Identifiable Information: is anything that can be used to identify an individual person on its own or in context with other information.
-- Recognizing Suspicious Sites, Links and Ads can be very difficult when navigating the world wide web. Attackers and Hackers intentionally go to great lengths to keep it that way, while stealing information from users.
-- If visiting a website, look for signs of security such as a Lock symbol of the browser address bar and also making sure the site includes “https” instead of “http”.
-- Websites that have Incorrect Spelling, which is a common method for having unsuspecting users to log into it thinking that it is a legitimate site when it’s not.
-- Incorrect Spelling or Bad Grammar, typically occurs with emails, real business emails typically have a spell check system in place.
-- Threats are huge indicator that you are being tricked to be redirected to a suspicious site.
-- Deals That are too good to Be True for example receiving emails that advertise that the user won something or they have been select for some form of cash prize is another huge indicator that something is off.
+- Know how to recognize secure websites by avoiding sites that only use http:// or have invalid certificates. You should only enter sensitive information to websites that use https://. 
+- Disabling Autofill to prevent you from submitting personal information to online forms. 
+- Do not visit piracy, hate-speech, or pornographic websites.   
+- Limit your use of personally identifiable information (name, address, phone number, etc.) online.
+- Look out for websites with bad spelling or grammar, or deals that seem "too good to be true". 
+- Threats like "you've been infected with a virus" or blackmail.
 
 ## Managing Users
-Users present the weakest link in the security chain. Performing the following tasks will help users be alert to security risks and greatly reduce the chances of an attack. These tasks include, managing user account types, setting proper expectations with users on privacy and acceptable user policies and managing passwords.
-- Managing User Account Types by disabling user accounts that are not needed e.g. Guests. Also renaming the user accounts prevents a hacker from accessing the right account with Admin account. User accounts typically come in three categories:
-- Administrators: can essentially do anything on the computer.
-- Users: Standard users that cannot make any changes to other users but their own.
-- Guest: are very basic, they provide access to the internet only or access to a particular program at a public kiosk.
-- Managing User Expectations and Behaviors should be written clearly identifying policies and procedures that are deemed inappropriate and the consequences for performing those actions within a company.
-- Acceptable use Policy is a written document that states policies and procedures identifying actions that are inappropriate and the consequences for performing those actions.
-- Expectations of Privacy should clearly inform employees that everything that is owned by the organization or company will be monitored by the company or organization, and although social media information maybe private it may also be subject to the same terms if it includes information that regards the company that it works for.
-- Handling Confidential Information are the policies set in place on how to manage information that is considered confidential.
-- Managing Passwords involves proper user training and is aided by restrictions a network administrator can set on users if their computers are part of a domain.
-- Creating Effective Passwords is creating a strong password that is difficult for someone to guess. Strong passwords have the following characteristics:
-- Long: meaning it will have more than 8 characters.
+Users are the biggest security vulnerability. Precautions can be taken to minimize the amount of damage users can do to their system and the network. 
+
+Users permissions should be limited. The administrator role should only be assigned to trusted individuals, and never used for day-to-day use. In addition, the Guest account should be disabled unless it's a publicly accessible computer. 
+
+The rules about using a computer and network should be written clearly, identifying what behaviors are deemed inappropriate and the consequences for performing those actions within a company. This document is usually called the **Acceptable Use Policy (AUP)**. In addition, users should be clearly informed about their privacy rights on company devices (what data is collected, for how long, why). If your company handles sensitive information, there should also be clear policies about how to manage that information appropriately.  
+
+**A note on privacy**: even on your own computer, privacy is not guaranteed. Your data on social media sites, free email accounts, and apps like Whatsapp and Snapchat are not private. 
+
+### Effective Passwords
+Passwords should be difficult to guess, even by someone who knows you well. 
+- Long: meaning it will have more than 8 characters. Some organizations recommend using a passphrase, or a combination of words. 
 - Complex: it contains at least one capital letter and at least one number and/or symbol.
 - Unusual: The password doesn’t appear to be in a dictionary and isn’t a proper noun or word.
-- Substitute zero for the letter o in words: e.g. `St0rageR00m`
-- Substitute numbers for letters: use the numerical that represents the letter of the alphabet or use the numeral that represents the position in the word.
-- Combine two or more unrelated but memorable words: e.g., `GroceryCandleFlowerpot`
-- Substitute a symbol for a letter that it resembles: e.g., `$ubstitution`
-- Passwords Changes meaning have a system in which you change your password many times e.g., Companies’ IT policies require that you change your password at regular intervals, such as every 90 days.
+  - Substitute zero for the letter o in words: e.g. `St0rageR00m`
+  - Substitute numbers for letters: use the numerical that represents the letter of the alphabet or use the numeral that represents the position in the word.
+  - Combine two or more unrelated but memorable words: e.g., `GroceryCandleFlowerpot`
+  - Substitute a symbol for a letter that it resembles: e.g., `$ubstitution`
+- Change your password regularly. Corporate IT policies require that you change your password at regular intervals, such as every 90 days.
 
 ## Using Data Encryption
-Using data encryption in networks allows protect from sniffers whom are tying to read the data. There are 2 encryption methods, symmetrical and asymmetrical.
-- Symmetrical: is when the same key is used to both encrypt and decrypt data packets.
-- Asymmetrical: is when one key is used to encrypt and another key is to decrypt, this method is more secure because it requires a user to have both keys instead of one to read the data.
-- Cipher text: is when a sender and receiver encode or encrypts text messages making it difficult to read them.
-- Public key Infrastructure (PKI) is a popular asymmetrical encryption technology which uses 2 keys, a public and a private key.
-- Encrypting Data at Rest simply means encrypting data in either at the disk level or at the file level and not on the network level. This level of encryption typically protects the files on the device rather than the files that are being transmitted.
-- Encrypting Data in Transit means encrypting data that is on the network. For a system to accept the data that is being transmitted and received, both the sender and the receiver should support the same encryption standard.
+When possible, always use encryption. This includes **Data at Rest** (data stored on your local device) and **Data in Transit** (data you're communicating over the internet). 
+- The best encryption to use with for data in transit is ones built on **Public Key Infrastructure (PKI)** is a popular asymmetrical encryption technology which uses 2 keys, a public and a private key. With this, you're able to communicate with others without knowing their encryption password. 
 - Email: All major corporate email providers and the big public ones support the encryption of emails in transit.
 - Internet Browsing: Meaning if a website has HTTPS then it would mean the data being transmitted to and from a user would be encrypted.
 - Virtual Private Network: is a secure, encrypted connection between two specific computers.
-- Mobile Applications: meaning most mobile applications will encrypt data in transit, but if the application doesn’t support it then.
 
 # Summary
 This lesson was focused on security best practices. It looked at device hardening, which included keeping the software up-to-date, using passwords, and changing default passwords. Next was protecting against network threats using antivirus and anti-malware software and software firewalls. Then user account management which meant clearly defining which user accounts to use and disabling accounts that are not in use such as guest accounts. Finally, we concluded with encryption of the device’s files and data packets, and the data packets being transported in its network. 	
