@@ -1,6 +1,6 @@
-# IT Fundamentals Notebook website
+# certified.ninja - CompTIA IT Fundamentals+ 
 
-This repository hosts instructor and student notes for [MNCFS](https://mncfs.org/)'s CompTIA ITF+ classes.
+This repository hosts instructor and student notes for [MNCFS](https://mncfs.org/)'s CompTIA ITF+ course.
 
 This website is built using [Docusaurus 2](https://v2.docusaurus.io/) and is compiled and hosted by [Netlify](https://netlify.com).
 

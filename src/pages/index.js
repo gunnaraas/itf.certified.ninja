@@ -12,7 +12,7 @@ const features = [
     imageUrl: 'img/undraw_road_to_knowledge.svg',
     description: (
       <>
-        The IT Fundamentals Notebook is designed to be an easy to use
+        The certified.ninja course notes are designed to be an easy to use
         supplementary resource as you prepare for the CompTIA ITF+ Certification Exam.
         Read the textbook and regularly attending classes, you will
         be well prepared for the certification exam!
@@ -77,14 +77,6 @@ function Home() {
               )}
               to={useBaseUrl('docs/')}>
               Get Started
-            </Link>
-            <Link
-              className={clsx(
-                'button button--outline button--secondary button--lg',
-                styles.getStarted,
-              )}
-              to={useBaseUrl('http://bit.ly/it-classes/')}>
-              Interest Survey
             </Link>
           </div>
         </div>

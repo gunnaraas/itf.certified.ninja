@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'Learn IT Online',
+  title: 'itf.certified.ninja',
   tagline: 'CompTIA IT Fundamentals+',
   url: 'https://itf.certified.ninja',
   baseUrl: '/',
@@ -24,6 +24,11 @@ module.exports = {
         {
           href: 'https://github.com/gunnaraas/itf.certified.ninja',
           label: 'GitHub',
+          position: 'right',
+        },
+        {
+          href: 'https://certified.ninja',
+          label: 'certified.ninja',
           position: 'right',
         },
       ],
