@@ -1,15 +1,15 @@
 module.exports = {
-  title: 'CompTIA IT Fundamentals+ Notebook',
-  tagline: 'Jumpstart Your IT Career',
-  url: 'https://itf.gunnaraas.com',
+  title: 'Learn IT Online',
+  tagline: 'CompTIA IT Fundamentals+',
+  url: 'https://itf.certified.ninja',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   favicon: 'img/favicon.ico',
   organizationName: 'gunnaraas', // Usually your GitHub org/user name.
-  projectName: 'fundamentals-handbook', // Usually your repo name.
+  projectName: 'itf.certified.ninja', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'CompTIA IT Fundamentals+ Notebook',
+      title: 'CompTIA IT Fundamentals+',
       logo: {
         alt: 'MNCFS Logo',
         src: 'img/mncfs-logo.png',
@@ -22,7 +22,7 @@ module.exports = {
           position: 'right',
         },
         {
-          href: 'https://github.com/gunnaraas/fundamentals-handbook',
+          href: 'https://github.com/gunnaraas/itf.certified.ninja',
           label: 'GitHub',
           position: 'right',
         },
@@ -64,8 +64,8 @@ module.exports = {
               href: 'https://www.comptia.org/certifications/it-fundamentals',
             },
             {
-              label: 'gunnaraas.com',
-              href: 'https://gunnaraas.com',
+              label: 'certified.ninja',
+              href: 'https://certified.ninja',
             },
           ],
         },

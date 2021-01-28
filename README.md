@@ -4,7 +4,7 @@ This repository hosts instructor and student notes for [MNCFS](https://mncfs.org
 
 This website is built using [Docusaurus 2](https://v2.docusaurus.io/) and is compiled and hosted by [Netlify](https://netlify.com).
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/41f7b618-855e-4cc5-ab91-ba422d39aded/deploy-status)](https://app.netlify.com/sites/comptia-itf-handbook/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/41f7b618-855e-4cc5-ab91-ba422d39aded/deploy-status)](https://app.netlify.com/sites/learn-comptia-itf-online/deploys)
 
 Except where otherwise noted, content on this site is licensed under a [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/).
 
@@ -16,7 +16,7 @@ Open a terminal (e.g. PowerShell, [Windows Terminal](https://www.microsoft.com/e
 
 Clone and enter the repository using:
 ```
-git clone https://github.com/gunnaraas/fundamentals-handbook.git && cd fundamentals-handbook
+git clone https://github.com/gunnaraas/itf.certified.ninja.git && cd itf.certified.ninja
 ```
 
 To start up the local development server and launch a preview window in your default browser, run the command:
