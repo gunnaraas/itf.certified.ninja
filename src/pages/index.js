@@ -63,7 +63,7 @@ function Home() {
   const {siteConfig = {}} = context;
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`IT Fundamentals+ Notes`}
       description="An online learning resource for MNCFS students preparing for the CompTIA ITF+ exam">
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
