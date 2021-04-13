@@ -12,6 +12,13 @@ Except where otherwise noted, content on this site is licensed under a [Creative
 
 To develop this website locally on your machine, make sure you have [node.js](https://nodejs.org/en/), [yarn](https://yarnpkg.com/), and a text editor of your choice ([Atom](https://atom.io/), [Visual Code Studio](https://code.visualstudio.com/)) installed. I recommend Windows users use [Chocolatey](https://chocolatey.org) to install node.js and yarn.
 
+To install Chocolatey on Windows - follow [this guide](https://chocolatey.org/install). 
+
+To install the dependencies for development on Windows, run the following code in PowerShell (as Administrator... most easily accessed via Win + X):
+```
+choco install git nodejs yarn 
+```
+
 Open a terminal (e.g. PowerShell, [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab)) in the location you'd like to save the development files (In Windows Explorer: Shift + Right-Click).
 
 Clone and enter the repository using:
