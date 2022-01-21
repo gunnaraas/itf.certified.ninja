@@ -1,38 +1,72 @@
-module.exports = {
+// @ts-check
+// Note: type annotations allow type checking and IDEs autocompletion
+
+const lightCodeTheme = require('prism-react-renderer/themes/github');
+const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+
+/** @type {import('@docusaurus/types').Config} */
+const config = {
   title: 'itf.certified.ninja',
   tagline: 'CompTIA IT Fundamentals+',
-  url: 'https://itf.certified.ninja',
+  url: 'https://itf.certified.ninja.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'gunnaraas', // Usually your GitHub org/user name.
   projectName: 'itf.certified.ninja', // Usually your repo name.
-  themeConfig: {
-    navbar: {
-      title: 'CompTIA IT Fundamentals+',
-      logo: {
-        alt: 'MNCFS Logo',
-        src: 'img/mncfs-logo.png',
+
+  presets: [
+    [
+      'classic',
+      /** @type {import('@docusaurus/preset-classic').Options} */
+      ({
+        docs: {
+          sidebarPath: require.resolve('./sidebars.js'),
+          // Please change this to your repo.
+          editUrl: 'https://github.com/gunnaraas/itf.certified.ninja/edit/main/',
+        },
+        blog: {
+          showReadingTime: true,
+          // Please change this to your repo.
+          editUrl:
+            'https://github.com/gunnaraas/itf.certified.ninja/edit/main/',
+        },
+        theme: {
+          customCss: require.resolve('./src/css/custom.css'),
+        },
+      }),
+    ],
+  ],
+
+  themeConfig:
+    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+    ({
+      navbar: {
+        title: 'itf.certified.ninja',
+        logo: {
+          alt: 'MNCFS Logo',
+          src: 'img/mncfs-logo.png',
+        },
+        items: [
+          {
+            type: 'doc',
+            docId: 'ch0-gettingstarted',
+            position: 'right',
+            label: 'Start Reading',
+          },
+          {
+            href: 'https://github.com/gunnaraas/itf.certified.ninja',
+            label: 'GitHub',
+            position: 'right',
+          },
+          {
+            href: 'https://certified.ninja',
+            label: 'certified.ninja',
+            position: 'right',
+          },
+        ],
       },
-      items: [
-        {
-          to: 'docs/',
-          activeBasePath: 'ch0-gettingstarted',
-          label: 'Start Reading',
-          position: 'right',
-        },
-        {
-          href: 'https://github.com/gunnaraas/itf.certified.ninja',
-          label: 'GitHub',
-          position: 'right',
-        },
-        {
-          href: 'https://certified.ninja',
-          label: 'certified.ninja',
-          position: 'right',
-        },
-      ],
-    },
     footer: {
       style: 'dark',
       links: [
@@ -77,27 +111,11 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Minnesota Tech for Success.`,
     },
-  },
-  presets: [
-    [
-      '@docusaurus/preset-classic',
-      {
-        docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/gunnaraas/itf.certified.ninja/edit/master/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/gunnaraas/itf.certified.ninja',
-        },
-        theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-        },
+      prism: {
+        theme: lightCodeTheme,
+        darkTheme: darkCodeTheme,
       },
-    ],
-  ],
+    }),
 };
+
+module.exports = config;

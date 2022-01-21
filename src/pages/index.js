@@ -64,7 +64,7 @@ function Home() {
   return (
     <Layout
       title={`IT Fundamentals+ Notes`}
-      description="An online learning resource for MNCFS students preparing for the CompTIA ITF+ exam">
+      description="An online learning resource for MTFS students preparing for the CompTIA ITF+ exam">
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
