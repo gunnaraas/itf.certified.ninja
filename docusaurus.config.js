@@ -61,8 +61,8 @@ module.exports = {
           title: 'Related Sites',
           items: [
             {
-              label: 'MNCFS Homepage',
-              href: 'https://mncfs.org',
+              label: 'MTFS Homepage',
+              href: 'https://techforsuccess.org',
             },
             {
               label: 'CompTIA ITF+ Exam Information',
@@ -75,7 +75,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Minnesota Computers for Schools.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Minnesota Tech for Success.`,
     },
   },
   presets: [
@@ -86,13 +86,13 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/gunnaraas/fundamentals-handbook/edit/master/',
+            'https://github.com/gunnaraas/itf.certified.ninja/edit/master/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/gunnaraas/fundamentals-handbook',
+            'https://github.com/gunnaraas/itf.certified.ninja',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),

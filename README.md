@@ -1,6 +1,6 @@
 # certified.ninja - CompTIA IT Fundamentals+ 
 
-This repository hosts instructor and student notes for [MNCFS](https://mncfs.org/)'s CompTIA ITF+ course.
+This repository hosts instructor and student notes for [MTFS](https://techforsuccess.org/)'s CompTIA ITF+ course.
 
 This website is built using [Docusaurus 2](https://v2.docusaurus.io/) and is compiled and hosted by [Netlify](https://netlify.com).
 
@@ -16,18 +16,22 @@ To install Chocolatey on Windows - follow [this guide](https://chocolatey.org/in
 
 To install the dependencies for development on Windows, run the following code in PowerShell (as Administrator... most easily accessed via Win + X):
 ```
-choco install git nodejs yarn 
+choco install git nodejs 
+refreshenv
+npm install yarn 
 ```
 
 Open a terminal (e.g. PowerShell, [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab)) in the location you'd like to save the development files (In Windows Explorer: Shift + Right-Click).
 
 Clone and enter the repository using:
 ```
-git clone https://github.com/gunnaraas/itf.certified.ninja.git && cd itf.certified.ninja
+git clone https://github.com/gunnaraas/itf.certified.ninja.git 
+cd itf.certified.ninja
 ```
 
 To start up the local development server and launch a preview window in your default browser, run the command:
 ```
+yarn install
 yarn start
 ```
 

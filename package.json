@@ -1,5 +1,5 @@
 {
-  "name": "fundamentals-handbook",
+  "name": "itf.certified.ninja",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -11,8 +11,8 @@
     "serve": "docusaurus serve"
   },
   "dependencies": {
-    "@docusaurus/core": "2.0.0-alpha.64",
-    "@docusaurus/preset-classic": "2.0.0-alpha.64",
+    "@docusaurus/core": "2.0.0-beta.14",
+    "@docusaurus/preset-classic": "2.0.0-beta.14",
     "@mdx-js/react": "^1.5.8",
     "clsx": "^1.1.1",
     "node-fetch": "^2.6.1",
